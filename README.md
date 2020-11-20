@@ -1,10 +1,12 @@
-disaster-tweets
-==============================
+<h1 align="center">
+<p><a href="https://www.kaggle.com/c/nlp-getting-started">Real or Not? NLP with Disaster Tweets</a></p>
+</h1>
 
 TODO: add context and description of project
 
+## Project Organization
 <details>
-<summary><b>Project Organization</b>
+<summary><b>Hierarchy</b>
 </summary>
 <p>
 
@@ -56,6 +58,18 @@ TODO: add context and description of project
             └── visualize.py
 ```
 </p>
---------
+</details>
+
+## Docker
+To fire up the environment using docker-compose, run:
+```console
+foo@bar:/disaster-tweets$ docker-compose up
+```
+To fire up the environment using docker, run:
+```console
+foo@bar:/disaster-tweets$ docker run --rm -p 8888:8888 --mount type=bind,source=$PWD,target=/home/jovyan cakiki/disaster-tweets
+```
+
+
 
 <p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
