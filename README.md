@@ -74,7 +74,7 @@ TODO: add context and description of project
         - [x] Supervisor Kick-Off: everyone
         - [x] Discord server setup: everyone
         - [x] Repo setup: Chris
-        - [ ] Project plan: Julian + Karl
+        - [x] Project plan: Julian + Karl
     * **Deliverables:** Project Plan, repository
     * **Due:** 23.11.2020
 
