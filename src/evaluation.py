@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import copy
-import pickle
+import dill
 import logging as log
 import pandas as pd
 import numpy as np
@@ -51,7 +51,7 @@ def evaluate(model, store_model=True, store_submission=True):
     
     # Setup cross-validation (CV) engine
     rskf = RepeatedStratifiedKFold(n_splits=n_folds, n_repeats=n_runs, random_state=seed)
-    log.info('Evaluating model with {} experiments of {}-fold Cross Validation...'.format(n_runs, n_folds))
+    log.info('Evaluating model with {} experiment(s) of {}-fold Cross Validation...'.format(n_runs, n_folds))
     # We want to get model results for the ground truth (y_true) and the corresponding model prediction (y_pred)
     train_res = {
         'y_true': [],
@@ -112,7 +112,7 @@ def evaluate(model, store_model=True, store_submission=True):
         if(store_model):
             file_path = '../models/model_{}.pck'.format(label)
             with open(file_path, 'wb') as f:
-                pickle.dump({'model': model, 'train_res': train_res, 'test_res': test_res}, f)
+                dill.dump({'model': model, 'train_res': train_res, 'test_res': test_res}, f)
             log.info('-> Stored model to {}'.format(file_path))
         # Store model with its CV results if flag is set
         if(store_submission):
@@ -128,6 +128,7 @@ def evaluate(model, store_model=True, store_submission=True):
             file_path = '../models/submission_{}.csv'.format(label)
             df_subm.to_csv(file_path, index=False)
             log.info('-> Stored submission file to {}'.format(file_path))
+    log.info('Evaluation finished.')
             
             
     
