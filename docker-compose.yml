@@ -2,11 +2,12 @@ version: '3.8'
 
 services:
         python:
-                image: cakiki/disaster-tweets:latest
                 build: .
                 container_name: disaster-tweets
                 ports:
                         - "8888:8888"
+                        - "9999:9999"
+                        - "6006:6006"
                 volumes:
                         - type: bind
                           source: .
