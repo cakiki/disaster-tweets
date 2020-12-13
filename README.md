@@ -60,6 +60,73 @@ TODO: add context and description of project
 </p>
 </details>
 
+<details>
+<summary><b>Milestones</b>
+</summary>
+<p>
+
+1. MS: Agree on core technologies & frameworks
+    * **Description:**
+        - Programming: Python3, scikit-learn, sphinx
+        - Infrastructure: github, docker, notebooks
+        - orga: discord, BBB
+    * **Tasks:**
+        - [x] Supervisor Kick-Off: everyone
+        - [x] Discord server setup: everyone
+        - [x] Repo setup: Chris
+        - [x] Project plan: Julian + Karl
+    * **Deliverables:** Project Plan, repository
+    * **Due:** 23.11.2020
+
+2. MS: Implement evaluation pipeline:
+    * **Description:**
+        - Shared evaluation pipeline: (1) read data -> (2) feed to model -> (3) generate score, plots + submission file
+        - Idea: Once pipeline stands, everyone plays with models in step (2)
+    * **Tasks:**
+        - [ ] Implement data assembly: ? (pending)
+        - [ ] Implement K-Fold Cross-Validation (k=?) as test splits: ? (pending)
+        - [ ] Generate result graphs and scores: ? (pending)
+        - [ ] Generate submission file: ? (pending)
+    * **Deliverables:** Shared Evaluation Pipeline
+    * **Due:** ?
+3. MS: First Model Iteration:
+    * **Description:**
+        - Baseline model: Integrate simple model from tutorial (https://www.kaggle.com/philculliton/nlp-getting-started-tutorial)
+        - Everyone plays with models in step (2)
+    * **Tasks:**
+        - [ ] Implement model from tutorial: ? (pending)
+        - [ ] Implement own features & models: everyone (pending; fill in approach from each one)
+    * **Deliverables:** Model dumps and their evaluation results
+    * **Due:** ?
+4. MS: Second Model Iteration:
+    * **Description:**
+        - Sync: Share insights & features from first iteration in group and with supervisor
+        - Everyone attempts to improve their models from insights & features
+    * **Tasks:**
+        - [ ] Sync Meeting (with supervisor?): everyone (pending)
+        - [ ] Improve own features & models: everyone (pending)
+    * **Deliverables:** Model dumps and their evaluation results
+    * **Due:** ?
+5. MS: Final Presentation
+    * **Tasks:**
+        - [ ] Intro slides: ? (pending)
+        - [ ] Leaderboard stats slide: ? (pending)
+        - [ ] Our result slides: everyone (pending)
+    * **Deliverables:** Presentation Slides
+    * **Due:** ? (end of january)
+6. MS: Final Report
+    * **Tasks:**
+        - [ ] Abstract: ? (pending)
+        - [ ] Intro: ? (pending)
+        - [ ] Related Work: ? (pending)
+        - [ ] Methods: ? (pending)
+        - [ ] Result: ? (pending)
+        - [ ] Discussion: ? (pending)
+    * **Deliverables:** Report Document
+    * **Due:** ? (end of february)
+</p>
+</details>
+
 ## Docker
 To fire up the environment using docker-compose, run:
 ```console
