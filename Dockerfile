@@ -41,7 +41,7 @@ RUN set -x \
   && conda config --append channels conda-forge \
   && conda config --append channels anaconda \
   && conda install --yes -c conda-forge rise \
-  && pip install --use-feature=2020-resolver Sphinx==3.3.1 Pillow parsel panel param holoviews datashader tensorflow-probability wordcloud spacy \
+  && pip install --use-feature=2020-resolver Sphinx==3.3.1 Pillow parsel panel param holoviews datashader tensorflow-probability transformers[sentencepiece] pandas tensorflow_hub nltk wordcloud spacy emoji umap-learn xgboost \
   && python -m spacy download en_core_web_sm \ 
   && conda clean --all -f -y \
   && fix-permissions $CONDA_DIR \
