@@ -24,7 +24,7 @@ n_folds = 10
 # The random seed for reproducable results in the train-test splits
 seed = 42
 
-def evaluate(model, store_model=True, store_submission=True):
+def evaluate(model, store_model=True, store_submission=True, embeddings=None):
     """Evaluates the given classifier model on the Kaggle competition data set and optionally generates a submission file.
    
     The model must implements the scikit-learn API (i.e. `fit` and `predict`). Walk through the notebook
@@ -42,10 +42,13 @@ def evaluate(model, store_model=True, store_submission=True):
     log.info('Loading training data from {}...'.format(train_data_file))
     # Load data and perform some sanity checks
     df = pd.read_csv(train_data_file)
-    X = df[['keyword', 'location', 'text']].values
+    if not embeddings:
+        X = df[['keyword', 'location', 'text']].values
+    else:
+        X = np.load(f'train_{embeddings}_embeddings.npy')
     y = df['target'].values
-    assert X.shape == (len(y), 3)
-    assert set(np.unique(y)) == set([0, 1])
+    # assert X.shape == (len(y), 3)
+    # assert set(np.unique(y)) == set([0, 1])
     log.info('-> Number of samples: {}'.format(len(y)))
     log.info('-> Number of features: {}'.format(X.shape[1]))
     
@@ -118,6 +121,10 @@ def evaluate(model, store_model=True, store_submission=True):
         if(store_submission):
             # Load test data for submission and compute model predictions
             df_test = pd.read_csv(test_data_file)
+            if not embeddings:
+                X_subm = df[['keyword', 'location', 'text']].values
+            else:
+                X_subm = np.load(f'test_{embeddings}_embeddings.npy')
             X_subm = df_test[['keyword', 'location', 'text']].values
             y_subm = model.predict(X_subm)
             # Compile predictions into a submission data frame
