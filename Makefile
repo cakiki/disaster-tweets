@@ -7,14 +7,14 @@
 
 
 docker-build-image:
-	docker build -t disaster-tweets:0.0.2 .
+	docker build -t disaster-tweets:0.0.3 .
 
 docker-run-jupyter:
 	docker run --rm -it -p 8888:8888 -p 9999:9999 -p 6006:6006 \
 	--env PYTHONPATH=/home/jovyan/src \
 	--mount type=bind,source=${PWD},target=/home/jovyan/work --name disaster-tweets \
 	--workdir=/home/jovyan/work \
-	 disaster-tweets:0.0.2
+	 disaster-tweets:0.0.3
 docker-run-jupyter-gpu:
 	docker run --rm -it -p 8888:8888 --gpus all --env PYTHONPATH=/tf/src \
 			--mount type=bind,source=${PWD},target=/tf \
