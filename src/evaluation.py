@@ -45,7 +45,7 @@ def evaluate(model, store_model=True, store_submission=True, embeddings=None):
     if not embeddings:
         X = df[['keyword', 'location', 'text']].values
     else:
-        X = np.load(f'train_{embeddings}_embeddings.npy')
+        X = np.load(f'../data/features/train_{embeddings}_embeddings.npy')
     y = df['target'].values
     # assert X.shape == (len(y), 3)
     # assert set(np.unique(y)) == set([0, 1])
@@ -113,7 +113,7 @@ def evaluate(model, store_model=True, store_submission=True, embeddings=None):
         label = '{}_{}_{}x{}cv_{}'.format(dt_str, type(model).__name__, n_runs, n_folds, round(f1_test, 2))
         # Store model with its CV results if flag is set
         if(store_model):
-            file_path = '../models/model_{}.pck'.format(label)
+            file_path = f'../models/model_{label}_{embeddings}.pck' if embeddings else f'../models/model_{label}.pck'
             with open(file_path, 'wb') as f:
                 dill.dump({'model': model, 'train_res': train_res, 'test_res': test_res}, f)
             log.info('-> Stored model to {}'.format(file_path))
@@ -124,15 +124,14 @@ def evaluate(model, store_model=True, store_submission=True, embeddings=None):
             if not embeddings:
                 X_subm = df[['keyword', 'location', 'text']].values
             else:
-                X_subm = np.load(f'test_{embeddings}_embeddings.npy')
-            X_subm = df_test[['keyword', 'location', 'text']].values
+                X_subm = np.load(f'../data/features/test_{embeddings}_embeddings.npy')
             y_subm = model.predict(X_subm)
             # Compile predictions into a submission data frame
             df_subm = pd.DataFrame()
             df_subm['id'] = df_test['id']
             df_subm['target'] = y_subm
             # Save frame as CSV
-            file_path = '../models/submission_{}.csv'.format(label)
+            file_path = f'../models/submission_{label}_{embeddings}.csv' if embeddings else f'../models/submission_{label}.csv'
             df_subm.to_csv(file_path, index=False)
             log.info('-> Stored submission file to {}'.format(file_path))
     log.info('Evaluation finished.')
