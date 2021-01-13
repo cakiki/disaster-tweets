@@ -1,0 +1,26 @@
+{
+    "os": "Linux-4.15.0-129-generic-x86_64-with-Ubuntu-18.04-bionic",
+    "python": "3.6.9",
+    "heartbeatAt": "2021-01-11T17:19:13.313720",
+    "startedAt": "2021-01-11T17:19:12.175118",
+    "docker": null,
+    "gpu": "TITAN RTX",
+    "gpu_count": 1,
+    "cpu_count": 28,
+    "cuda": null,
+    "args": [
+        "-f",
+        "/root/.local/share/jupyter/runtime/kernel-6430a03f-fabe-4add-9b61-6337d58aafa6.json"
+    ],
+    "state": "running",
+    "program": "<python with no main file>",
+    "git": {
+        "remote": "git@github.com:cakiki/disaster-tweets.git",
+        "commit": "ff0c8845a9cd5cf279631391e2df4003c7c0e924"
+    },
+    "email": null,
+    "root": "/tf",
+    "host": "738f0ce75a20",
+    "username": "root",
+    "executable": "/usr/bin/python3"
+}

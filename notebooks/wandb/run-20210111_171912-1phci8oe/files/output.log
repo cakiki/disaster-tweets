@@ -1,0 +1,1193 @@
+[32m[I 2021-01-11 18:06:58,642][0m A new study created in memory with name: no-name-6100c209-897e-4318-a4d8-a6a4b454f902[0m
+  0%|          | 0/7 [00:00<?, ?it/s]feature_fraction, val_score: inf:   0%|          | 0/7 [00:00<?, ?it/s][33m[W 2021-01-11 18:06:58,830][0m Trial 0 failed because of the following error: ValueError('too many values to unpack (expected 4)',)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/optuna/_optimize.py", line 189, in _run_trial
+    value = func(trial)
+  File "/usr/local/lib/python3.6/dist-packages/optuna/integration/_lightgbm_tuner/optimize.py", line 318, in __call__
+    cv_results = lgb.cv(self.lgbm_params, train_set, **self.lgbm_kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/lightgbm/engine.py", line 604, in cv
+    evaluation_result_list=res))
+  File "/usr/local/lib/python3.6/dist-packages/wandb/integration/lightgbm/__init__.py", line 20, in callback
+    recorder(env)
+  File "/usr/local/lib/python3.6/dist-packages/lightgbm/callback.py", line 102, in _callback
+    _init(env)
+  File "/usr/local/lib/python3.6/dist-packages/lightgbm/callback.py", line 96, in _init
+    for data_name, eval_name, _, _ in env.evaluation_result_list:
+ValueError: too many values to unpack (expected 4)[0m
+[32m[I 2021-01-11 18:11:23,928][0m A new study created in memory with name: no-name-38d79ed3-2451-45b0-93fd-99c139320dfa[0m
+
+  0%|          | 0/7 [00:00<?, ?it/s][A
+feature_fraction, val_score: inf:   0%|          | 0/7 [00:00<?, ?it/s][A
+feature_fraction, val_score: 0.490385:   0%|          | 0/7 [00:01<?, ?it/s][A
+feature_fraction, val_score: 0.490385:  14%|#4        | 1/7 [00:01<00:08,  1.50s/it][A[32m[I 2021-01-11 18:11:25,442][0m Trial 0 finished with value: 0.49038470230566283 and parameters: {'feature_fraction': 0.7}. Best is trial 0 with value: 0.49038470230566283.[0m
+
+feature_fraction, val_score: 0.490385:  14%|#4        | 1/7 [00:01<00:08,  1.50s/it][A
+feature_fraction, val_score: 0.488147:  14%|#4        | 1/7 [00:02<00:08,  1.50s/it][A
+feature_fraction, val_score: 0.488147:  29%|##8       | 2/7 [00:02<00:07,  1.50s/it][A[32m[I 2021-01-11 18:11:26,934][0m Trial 1 finished with value: 0.4881471348932987 and parameters: {'feature_fraction': 0.8}. Best is trial 1 with value: 0.4881471348932987.[0m
+
+feature_fraction, val_score: 0.488147:  29%|##8       | 2/7 [00:02<00:07,  1.50s/it][A
+feature_fraction, val_score: 0.488147:  29%|##8       | 2/7 [00:04<00:07,  1.50s/it][A
+feature_fraction, val_score: 0.488147:  43%|####2     | 3/7 [00:04<00:06,  1.61s/it][A[32m[I 2021-01-11 18:11:28,685][0m Trial 2 finished with value: 0.49181880131148525 and parameters: {'feature_fraction': 0.8999999999999999}. Best is trial 1 with value: 0.4881471348932987.[0m
+
+feature_fraction, val_score: 0.488147:  43%|####2     | 3/7 [00:04<00:06,  1.61s/it][A
+feature_fraction, val_score: 0.485657:  43%|####2     | 3/7 [00:05<00:06,  1.61s/it][A
+feature_fraction, val_score: 0.485657:  57%|#####7    | 4/7 [00:05<00:04,  1.37s/it][A[32m[I 2021-01-11 18:11:29,680][0m Trial 3 finished with value: 0.48565674401998926 and parameters: {'feature_fraction': 0.4}. Best is trial 3 with value: 0.48565674401998926.[0m
+
+feature_fraction, val_score: 0.485657:  57%|#####7    | 4/7 [00:05<00:04,  1.37s/it][A
+feature_fraction, val_score: 0.485657:  57%|#####7    | 4/7 [00:07<00:04,  1.37s/it][A
+feature_fraction, val_score: 0.485657:  71%|#######1  | 5/7 [00:07<00:02,  1.35s/it][A[32m[I 2021-01-11 18:11:30,985][0m Trial 4 finished with value: 0.488694330829291 and parameters: {'feature_fraction': 1.0}. Best is trial 3 with value: 0.48565674401998926.[0m
+
+feature_fraction, val_score: 0.485657:  71%|#######1  | 5/7 [00:07<00:02,  1.35s/it][A
+feature_fraction, val_score: 0.485657:  71%|#######1  | 5/7 [00:08<00:02,  1.35s/it][A
+feature_fraction, val_score: 0.485657:  86%|########5 | 6/7 [00:08<00:01,  1.53s/it][A[32m[I 2021-01-11 18:11:32,882][0m Trial 5 finished with value: 0.48604977088947227 and parameters: {'feature_fraction': 0.5}. Best is trial 3 with value: 0.48565674401998926.[0m
+
+feature_fraction, val_score: 0.485657:  86%|########5 | 6/7 [00:08<00:01,  1.53s/it][A
+feature_fraction, val_score: 0.485657:  86%|########5 | 6/7 [00:10<00:01,  1.53s/it][A
+feature_fraction, val_score: 0.485657: 100%|##########| 7/7 [00:10<00:00,  1.54s/it][A[32m[I 2021-01-11 18:11:34,434][0m Trial 6 finished with value: 0.4864710614675101 and parameters: {'feature_fraction': 0.6}. Best is trial 3 with value: 0.48565674401998926.[0m
+feature_fraction, val_score: 0.485657: 100%|##########| 7/7 [00:10<00:00,  1.50s/it]
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+num_leaves, val_score: 0.485657:   0%|          | 0/20 [00:00<?, ?it/s][A[32m[I 2021-01-11 18:11:49,454][0m A new study created in memory with name: no-name-d6b1b809-a8f8-4f06-9778-d03573a8462b[0m
+
+
+  0%|          | 0/7 [00:00<?, ?it/s][A[A
+
+feature_fraction, val_score: inf:   0%|          | 0/7 [00:00<?, ?it/s][A[A[33m[W 2021-01-11 18:11:49,634][0m Trial 0 failed because of the following error: ValueError('too many values to unpack (expected 4)',)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/optuna/_optimize.py", line 189, in _run_trial
+    value = func(trial)
+  File "/usr/local/lib/python3.6/dist-packages/optuna/integration/_lightgbm_tuner/optimize.py", line 318, in __call__
+    cv_results = lgb.cv(self.lgbm_params, train_set, **self.lgbm_kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/lightgbm/engine.py", line 604, in cv
+    evaluation_result_list=res))
+  File "/usr/local/lib/python3.6/dist-packages/wandb/integration/lightgbm/__init__.py", line 20, in callback
+    recorder(env)
+  File "/usr/local/lib/python3.6/dist-packages/lightgbm/callback.py", line 102, in _callback
+    _init(env)
+  File "/usr/local/lib/python3.6/dist-packages/lightgbm/callback.py", line 96, in _init
+    for data_name, eval_name, _, _ in env.evaluation_result_list:
+ValueError: too many values to unpack (expected 4)[0m
+[32m[I 2021-01-11 18:14:02,589][0m A new study created in memory with name: no-name-b3057b99-5d72-430d-818c-06e95d5187fe[0m
+
+
+
+  0%|          | 0/7 [00:00<?, ?it/s][A[A[A
+
+
+feature_fraction, val_score: inf:   0%|          | 0/7 [00:00<?, ?it/s][A[A[ATraining until validation scores don't improve for 100 rounds
+[100]	valid_0's binary_logloss: 0.204463	valid_1's binary_logloss: 0.205627
+[200]	valid_0's binary_logloss: 0.101571	valid_1's binary_logloss: 0.102164
+[300]	valid_0's binary_logloss: 0.0541099	valid_1's binary_logloss: 0.0543836
+[400]	valid_0's binary_logloss: 0.0304965	valid_1's binary_logloss: 0.0305298
+feature_fraction, val_score: inf:   0%|          | 0/7 [07:05<?, ?it/s]
+num_leaves, val_score: 0.485657:   0%|          | 0/20 [02:30<?, ?it/s]
+[500]	valid_0's binary_logloss: 0.0186375	valid_1's binary_logloss: 0.0187464
+[600]	valid_0's binary_logloss: 0.0125889	valid_1's binary_logloss: 0.0127637
+[700]	valid_0's binary_logloss: 0.00939437	valid_1's binary_logloss: 0.00956064
+[800]	valid_0's binary_logloss: 0.007719	valid_1's binary_logloss: 0.00783859
+[900]	valid_0's binary_logloss: 0.00679609	valid_1's binary_logloss: 0.00690465
+[1000]	valid_0's binary_logloss: 0.00628286	valid_1's binary_logloss: 0.00637332
+Did not meet early stopping. Best iteration is:
+[1000]	valid_0's binary_logloss: 0.00628286	valid_1's binary_logloss: 0.00637332
+
+
+
+feature_fraction, val_score: 0.006373:   0%|          | 0/7 [00:04<?, ?it/s][A[A[A
+
+
+feature_fraction, val_score: 0.006373:  14%|#4        | 1/7 [00:04<00:29,  4.85s/it][A[A[A[32m[I 2021-01-11 18:14:07,458][0m Trial 0 finished with value: 0.006373316696265098 and parameters: {'feature_fraction': 0.5}. Best is trial 0 with value: 0.006373316696265098.[0m
+
+
+
+feature_fraction, val_score: 0.006373:  14%|#4        | 1/7 [00:04<00:29,  4.85s/it][A[A[ATraining until validation scores don't improve for 100 rounds
+[100]	valid_0's binary_logloss: 0.191257	valid_1's binary_logloss: 0.193538
+[200]	valid_0's binary_logloss: 0.090972	valid_1's binary_logloss: 0.0924748
+[300]	valid_0's binary_logloss: 0.0466673	valid_1's binary_logloss: 0.0473773
+[400]	valid_0's binary_logloss: 0.0258136	valid_1's binary_logloss: 0.026257
+[500]	valid_0's binary_logloss: 0.0157031	valid_1's binary_logloss: 0.01593
+[600]	valid_0's binary_logloss: 0.0107838	valid_1's binary_logloss: 0.0109646
+[700]	valid_0's binary_logloss: 0.00830537	valid_1's binary_logloss: 0.00843943
+[800]	valid_0's binary_logloss: 0.00704283	valid_1's binary_logloss: 0.00712691
+[900]	valid_0's binary_logloss: 0.00638703	valid_1's binary_logloss: 0.00647137
+[1000]	valid_0's binary_logloss: 0.00603535	valid_1's binary_logloss: 0.00611407
+Did not meet early stopping. Best iteration is:
+[1000]	valid_0's binary_logloss: 0.00603535	valid_1's binary_logloss: 0.00611407
+
+
+
+feature_fraction, val_score: 0.006114:  14%|#4        | 1/7 [00:10<00:29,  4.85s/it][A[A[A
+
+
+feature_fraction, val_score: 0.006114:  29%|##8       | 2/7 [00:10<00:28,  5.61s/it][A[A[A[32m[I 2021-01-11 18:14:13,599][0m Trial 1 finished with value: 0.00611406998055126 and parameters: {'feature_fraction': 0.8999999999999999}. Best is trial 1 with value: 0.00611406998055126.[0m
+
+
+
+feature_fraction, val_score: 0.006114:  29%|##8       | 2/7 [00:11<00:28,  5.61s/it][A[A[ATraining until validation scores don't improve for 100 rounds
+[100]	valid_0's binary_logloss: 0.195543	valid_1's binary_logloss: 0.1978
+[200]	valid_0's binary_logloss: 0.0944692	valid_1's binary_logloss: 0.0951361
+[300]	valid_0's binary_logloss: 0.0486151	valid_1's binary_logloss: 0.0485778
+[400]	valid_0's binary_logloss: 0.0270202	valid_1's binary_logloss: 0.026987
+[500]	valid_0's binary_logloss: 0.0165168	valid_1's binary_logloss: 0.0166199
+[600]	valid_0's binary_logloss: 0.0111951	valid_1's binary_logloss: 0.0113263
+[700]	valid_0's binary_logloss: 0.00858221	valid_1's binary_logloss: 0.00865052
+[800]	valid_0's binary_logloss: 0.00720067	valid_1's binary_logloss: 0.00730632
+[900]	valid_0's binary_logloss: 0.00648461	valid_1's binary_logloss: 0.00657869
+[1000]	valid_0's binary_logloss: 0.00609303	valid_1's binary_logloss: 0.00618373
+Did not meet early stopping. Best iteration is:
+[1000]	valid_0's binary_logloss: 0.00609303	valid_1's binary_logloss: 0.00618373
+
+
+
+feature_fraction, val_score: 0.006114:  29%|##8       | 2/7 [00:17<00:28,  5.61s/it][A[A[A
+
+
+feature_fraction, val_score: 0.006114:  43%|####2     | 3/7 [00:17<00:23,  5.82s/it][A[A[A[32m[I 2021-01-11 18:14:19,661][0m Trial 2 finished with value: 0.006183734351373139 and parameters: {'feature_fraction': 0.8}. Best is trial 1 with value: 0.00611406998055126.[0m
+
+
+
+feature_fraction, val_score: 0.006114:  43%|####2     | 3/7 [00:17<00:23,  5.82s/it][A[A[ATraining until validation scores don't improve for 100 rounds
+[100]	valid_0's binary_logloss: 0.189166	valid_1's binary_logloss: 0.190335
+[200]	valid_0's binary_logloss: 0.0893035	valid_1's binary_logloss: 0.0899561
+[300]	valid_0's binary_logloss: 0.0453925	valid_1's binary_logloss: 0.0455456
+[400]	valid_0's binary_logloss: 0.0250685	valid_1's binary_logloss: 0.0252314
+[500]	valid_0's binary_logloss: 0.0151692	valid_1's binary_logloss: 0.0152433
+[600]	valid_0's binary_logloss: 0.0104322	valid_1's binary_logloss: 0.0105409
+[700]	valid_0's binary_logloss: 0.00815034	valid_1's binary_logloss: 0.00827886
+[800]	valid_0's binary_logloss: 0.00695944	valid_1's binary_logloss: 0.00706742
+[900]	valid_0's binary_logloss: 0.00634959	valid_1's binary_logloss: 0.00643776
+[1000]	valid_0's binary_logloss: 0.00601611	valid_1's binary_logloss: 0.0060987
+Did not meet early stopping. Best iteration is:
+[1000]	valid_0's binary_logloss: 0.00601611	valid_1's binary_logloss: 0.0060987
+
+
+
+feature_fraction, val_score: 0.006099:  43%|####2     | 3/7 [00:22<00:23,  5.82s/it][A[A[A
+
+
+feature_fraction, val_score: 0.006099:  57%|#####7    | 4/7 [00:22<00:17,  5.76s/it][A[A[A[32m[I 2021-01-11 18:14:25,337][0m Trial 3 finished with value: 0.006098700007278366 and parameters: {'feature_fraction': 1.0}. Best is trial 3 with value: 0.006098700007278366.[0m
+
+
+
+feature_fraction, val_score: 0.006099:  57%|#####7    | 4/7 [00:22<00:17,  5.76s/it][A[A[ATraining until validation scores don't improve for 100 rounds
+[100]	valid_0's binary_logloss: 0.197296	valid_1's binary_logloss: 0.201977
+[200]	valid_0's binary_logloss: 0.0953845	valid_1's binary_logloss: 0.0979298
+[300]	valid_0's binary_logloss: 0.050137	valid_1's binary_logloss: 0.0512596
+[400]	valid_0's binary_logloss: 0.0278127	valid_1's binary_logloss: 0.0280491
+[500]	valid_0's binary_logloss: 0.0168255	valid_1's binary_logloss: 0.0170686
+[600]	valid_0's binary_logloss: 0.0114732	valid_1's binary_logloss: 0.0115956
+[700]	valid_0's binary_logloss: 0.00871221	valid_1's binary_logloss: 0.0088095
+[800]	valid_0's binary_logloss: 0.00729844	valid_1's binary_logloss: 0.00738972
+[900]	valid_0's binary_logloss: 0.00654681	valid_1's binary_logloss: 0.00662958
+[1000]	valid_0's binary_logloss: 0.00613569	valid_1's binary_logloss: 0.00621635
+Did not meet early stopping. Best iteration is:
+[1000]	valid_0's binary_logloss: 0.00613569	valid_1's binary_logloss: 0.00621635
+
+
+
+feature_fraction, val_score: 0.006099:  57%|#####7    | 4/7 [00:26<00:17,  5.76s/it][A[A[A
+
+
+feature_fraction, val_score: 0.006099:  71%|#######1  | 5/7 [00:26<00:10,  5.13s/it][A[A[A[32m[I 2021-01-11 18:14:29,348][0m Trial 4 finished with value: 0.0062163468651503925 and parameters: {'feature_fraction': 0.7}. Best is trial 3 with value: 0.006098700007278366.[0m
+
+
+
+feature_fraction, val_score: 0.006099:  71%|#######1  | 5/7 [00:26<00:10,  5.13s/it][A[A[ATraining until validation scores don't improve for 100 rounds
+[100]	valid_0's binary_logloss: 0.212066	valid_1's binary_logloss: 0.213083
+[200]	valid_0's binary_logloss: 0.107891	valid_1's binary_logloss: 0.109428
+[300]	valid_0's binary_logloss: 0.0578624	valid_1's binary_logloss: 0.0584382
+[400]	valid_0's binary_logloss: 0.032755	valid_1's binary_logloss: 0.0331849
+[500]	valid_0's binary_logloss: 0.0200279	valid_1's binary_logloss: 0.0203145
+[600]	valid_0's binary_logloss: 0.0135038	valid_1's binary_logloss: 0.0136805
+[700]	valid_0's binary_logloss: 0.00998854	valid_1's binary_logloss: 0.0101475
+[800]	valid_0's binary_logloss: 0.00810646	valid_1's binary_logloss: 0.00821754
+[900]	valid_0's binary_logloss: 0.00704151	valid_1's binary_logloss: 0.00712544
+[1000]	valid_0's binary_logloss: 0.00643517	valid_1's binary_logloss: 0.00650953
+Did not meet early stopping. Best iteration is:
+[1000]	valid_0's binary_logloss: 0.00643517	valid_1's binary_logloss: 0.00650953
+
+
+
+feature_fraction, val_score: 0.006099:  71%|#######1  | 5/7 [00:30<00:10,  5.13s/it][A[A[A
+
+
+feature_fraction, val_score: 0.006099:  86%|########5 | 6/7 [00:30<00:04,  4.57s/it][A[A[A[32m[I 2021-01-11 18:14:32,818][0m Trial 5 finished with value: 0.0065095305410720564 and parameters: {'feature_fraction': 0.4}. Best is trial 3 with value: 0.006098700007278366.[0m
+
+
+
+feature_fraction, val_score: 0.006099:  86%|########5 | 6/7 [00:30<00:04,  4.57s/it][A[A[ATraining until validation scores don't improve for 100 rounds
+[100]	valid_0's binary_logloss: 0.200194	valid_1's binary_logloss: 0.203406
+[200]	valid_0's binary_logloss: 0.0973195	valid_1's binary_logloss: 0.0987386
+[300]	valid_0's binary_logloss: 0.0509882	valid_1's binary_logloss: 0.0517328
+[400]	valid_0's binary_logloss: 0.0289007	valid_1's binary_logloss: 0.0293545
+[500]	valid_0's binary_logloss: 0.0176498	valid_1's binary_logloss: 0.0178533
+[600]	valid_0's binary_logloss: 0.011926	valid_1's binary_logloss: 0.0120354
+[700]	valid_0's binary_logloss: 0.00900532	valid_1's binary_logloss: 0.00912173
+[800]	valid_0's binary_logloss: 0.00749083	valid_1's binary_logloss: 0.00758922
+[900]	valid_0's binary_logloss: 0.00666214	valid_1's binary_logloss: 0.00675659
+[1000]	valid_0's binary_logloss: 0.0061997	valid_1's binary_logloss: 0.00628074
+Did not meet early stopping. Best iteration is:
+[1000]	valid_0's binary_logloss: 0.0061997	valid_1's binary_logloss: 0.00628074
+
+
+
+feature_fraction, val_score: 0.006099:  86%|########5 | 6/7 [00:34<00:04,  4.57s/it][A[A[A
+
+
+feature_fraction, val_score: 0.006099: 100%|##########| 7/7 [00:34<00:00,  4.35s/it][A[A[A[32m[I 2021-01-11 18:14:36,725][0m Trial 6 finished with value: 0.006280738076920802 and parameters: {'feature_fraction': 0.6}. Best is trial 3 with value: 0.006098700007278366.[0m
+feature_fraction, val_score: 0.006099: 100%|##########| 7/7 [00:34<00:00,  4.88s/it]
+  0%|          | 0/20 [00:00<?, ?it/s]num_leaves, val_score: 0.006099:   0%|          | 0/20 [00:00<?, ?it/s]Training until validation scores don't improve for 100 rounds
+[100]	valid_0's binary_logloss: 0.0107237	valid_1's binary_logloss: 0.0109051
+[200]	valid_0's binary_logloss: 0.00564503	valid_1's binary_logloss: 0.00571601
+[300]	valid_0's binary_logloss: 0.0055631	valid_1's binary_logloss: 0.00563169
+[400]	valid_0's binary_logloss: 0.00555643	valid_1's binary_logloss: 0.00562496
+[500]	valid_0's binary_logloss: 0.00555409	valid_1's binary_logloss: 0.00562243
+[600]	valid_0's binary_logloss: 0.00555283	valid_1's binary_logloss: 0.00562108
+[700]	valid_0's binary_logloss: 0.00555173	valid_1's binary_logloss: 0.00561997
+[800]	valid_0's binary_logloss: 0.00555114	valid_1's binary_logloss: 0.00561933
+[900]	valid_0's binary_logloss: 0.00555075	valid_1's binary_logloss: 0.00561896
+[1000]	valid_0's binary_logloss: 0.00555041	valid_1's binary_logloss: 0.00561871
+Did not meet early stopping. Best iteration is:
+[1000]	valid_0's binary_logloss: 0.00555041	valid_1's binary_logloss: 0.00561871
+num_leaves, val_score: 0.005619:   0%|          | 0/20 [00:08<?, ?it/s]num_leaves, val_score: 0.005619:   5%|5         | 1/20 [00:08<02:44,  8.66s/it][32m[I 2021-01-11 18:14:45,391][0m Trial 7 finished with value: 0.0056187145117533085 and parameters: {'num_leaves': 252}. Best is trial 7 with value: 0.0056187145117533085.[0m
+num_leaves, val_score: 0.005619:   5%|5         | 1/20 [00:08<02:44,  8.66s/it]Training until validation scores don't improve for 100 rounds
+[100]	valid_0's binary_logloss: 0.0233116	valid_1's binary_logloss: 0.0236575
+[200]	valid_0's binary_logloss: 0.00660393	valid_1's binary_logloss: 0.0066964
+[300]	valid_0's binary_logloss: 0.00564272	valid_1's binary_logloss: 0.00572021
+[400]	valid_0's binary_logloss: 0.00556309	valid_1's binary_logloss: 0.00563148
+[500]	valid_0's binary_logloss: 0.00555656	valid_1's binary_logloss: 0.00562468
+[600]	valid_0's binary_logloss: 0.00555402	valid_1's binary_logloss: 0.00562206
+[700]	valid_0's binary_logloss: 0.00555262	valid_1's binary_logloss: 0.00562102
+[800]	valid_0's binary_logloss: 0.00555165	valid_1's binary_logloss: 0.00561984
+[900]	valid_0's binary_logloss: 0.00555104	valid_1's binary_logloss: 0.00561918
+[1000]	valid_0's binary_logloss: 0.00555047	valid_1's binary_logloss: 0.00561865
+Did not meet early stopping. Best iteration is:
+[1000]	valid_0's binary_logloss: 0.00555047	valid_1's binary_logloss: 0.00561865
+num_leaves, val_score: 0.005619:   5%|5         | 1/20 [00:18<02:44,  8.66s/it]num_leaves, val_score: 0.005619:  10%|#         | 2/20 [00:18<02:43,  9.07s/it][32m[I 2021-01-11 18:14:54,754][0m Trial 8 finished with value: 0.005618646356552243 and parameters: {'num_leaves': 133}. Best is trial 8 with value: 0.005618646356552243.[0m
+num_leaves, val_score: 0.005619:  10%|#         | 2/20 [00:18<02:43,  9.07s/it]Training until validation scores don't improve for 100 rounds
+[100]	valid_0's binary_logloss: 0.0112035	valid_1's binary_logloss: 0.0113614
+[200]	valid_0's binary_logloss: 0.00566296	valid_1's binary_logloss: 0.00573012
+[300]	valid_0's binary_logloss: 0.00556293	valid_1's binary_logloss: 0.00563123
+[400]	valid_0's binary_logloss: 0.00555648	valid_1's binary_logloss: 0.00562469
+[500]	valid_0's binary_logloss: 0.00555375	valid_1's binary_logloss: 0.00562204
+[600]	valid_0's binary_logloss: 0.00555253	valid_1's binary_logloss: 0.00562054
+[700]	valid_0's binary_logloss: 0.0055517	valid_1's binary_logloss: 0.00561995
+[800]	valid_0's binary_logloss: 0.00555105	valid_1's binary_logloss: 0.00561916
+[900]	valid_0's binary_logloss: 0.00555058	valid_1's binary_logloss: 0.00561878
+[1000]	valid_0's binary_logloss: 0.00555021	valid_1's binary_logloss: 0.00561838
+Did not meet early stopping. Best iteration is:
+[1000]	valid_0's binary_logloss: 0.00555021	valid_1's binary_logloss: 0.00561838
+num_leaves, val_score: 0.005618:  10%|#         | 2/20 [00:27<02:43,  9.07s/it]num_leaves, val_score: 0.005618:  15%|#5        | 3/20 [00:27<02:39,  9.39s/it][32m[I 2021-01-11 18:15:04,523][0m Trial 9 finished with value: 0.005618382865632847 and parameters: {'num_leaves': 227}. Best is trial 9 with value: 0.005618382865632847.[0m
+num_leaves, val_score: 0.005618:  15%|#5        | 3/20 [00:27<02:39,  9.39s/it]Training until validation scores don't improve for 100 rounds
+[100]	valid_0's binary_logloss: 0.0107312	valid_1's binary_logloss: 0.0108722
+[200]	valid_0's binary_logloss: 0.00564698	valid_1's binary_logloss: 0.00571619
+[300]	valid_0's binary_logloss: 0.00556299	valid_1's binary_logloss: 0.00563122
+[400]	valid_0's binary_logloss: 0.00555637	valid_1's binary_logloss: 0.00562449
+[500]	valid_0's binary_logloss: 0.00555419	valid_1's binary_logloss: 0.00562222
+[600]	valid_0's binary_logloss: 0.00555269	valid_1's binary_logloss: 0.00562088
+[700]	valid_0's binary_logloss: 0.00555175	valid_1's binary_logloss: 0.00561976
+[800]	valid_0's binary_logloss: 0.00555115	valid_1's binary_logloss: 0.00561926
+[900]	valid_0's binary_logloss: 0.00555061	valid_1's binary_logloss: 0.00561865
+[1000]	valid_0's binary_logloss: 0.00555022	valid_1's binary_logloss: 0.0056183
+Did not meet early stopping. Best iteration is:
+[1000]	valid_0's binary_logloss: 0.00555022	valid_1's binary_logloss: 0.0056183
+num_leaves, val_score: 0.005618:  15%|#5        | 3/20 [00:36<02:39,  9.39s/it]num_leaves, val_score: 0.005618:  20%|##        | 4/20 [00:36<02:24,  9.04s/it][32m[I 2021-01-11 18:15:13,025][0m Trial 10 finished with value: 0.005618296596890519 and parameters: {'num_leaves': 248}. Best is trial 10 with value: 0.005618296596890519.[0m
+num_leaves, val_score: 0.005618:  20%|##        | 4/20 [00:36<02:24,  9.04s/it]Training until validation scores don't improve for 100 rounds
+[100]	valid_0's binary_logloss: 0.0107237	valid_1's binary_logloss: 0.0109051
+[200]	valid_0's binary_logloss: 0.00564503	valid_1's binary_logloss: 0.00571601
+[300]	valid_0's binary_logloss: 0.0055631	valid_1's binary_logloss: 0.00563169
+[400]	valid_0's binary_logloss: 0.00555643	valid_1's binary_logloss: 0.00562496
+[500]	valid_0's binary_logloss: 0.00555409	valid_1's binary_logloss: 0.00562243
+[600]	valid_0's binary_logloss: 0.00555283	valid_1's binary_logloss: 0.00562108
+[700]	valid_0's binary_logloss: 0.00555173	valid_1's binary_logloss: 0.00561997
+[800]	valid_0's binary_logloss: 0.00555114	valid_1's binary_logloss: 0.00561933
+[900]	valid_0's binary_logloss: 0.00555075	valid_1's binary_logloss: 0.00561896
+[1000]	valid_0's binary_logloss: 0.00555041	valid_1's binary_logloss: 0.00561871
+Did not meet early stopping. Best iteration is:
+[1000]	valid_0's binary_logloss: 0.00555041	valid_1's binary_logloss: 0.00561871
+num_leaves, val_score: 0.005618:  20%|##        | 4/20 [00:43<02:24,  9.04s/it]num_leaves, val_score: 0.005618:  25%|##5       | 5/20 [00:43<02:05,  8.35s/it][32m[I 2021-01-11 18:15:20,149][0m Trial 11 finished with value: 0.005618714511752131 and parameters: {'num_leaves': 252}. Best is trial 10 with value: 0.005618296596890519.[0m
+num_leaves, val_score: 0.005618:  25%|##5       | 5/20 [00:43<02:05,  8.35s/it]Training until validation scores don't improve for 100 rounds
+[100]	valid_0's binary_logloss: 0.0134723	valid_1's binary_logloss: 0.0136775
+[200]	valid_0's binary_logloss: 0.00577896	valid_1's binary_logloss: 0.0058581
+[300]	valid_0's binary_logloss: 0.00556698	valid_1's binary_logloss: 0.00563538
+[400]	valid_0's binary_logloss: 0.00555734	valid_1's binary_logloss: 0.00562559
+[500]	valid_0's binary_logloss: 0.0055544	valid_1's binary_logloss: 0.00562237
+[600]	valid_0's binary_logloss: 0.00555267	valid_1's binary_logloss: 0.00562077
+[700]	valid_0's binary_logloss: 0.0055518	valid_1's binary_logloss: 0.00561998
+[800]	valid_0's binary_logloss: 0.00555114	valid_1's binary_logloss: 0.00561919
+[900]	valid_0's binary_logloss: 0.00555067	valid_1's binary_logloss: 0.00561871
+[1000]	valid_0's binary_logloss: 0.00555028	valid_1's binary_logloss: 0.00561843
+Did not meet early stopping. Best iteration is:
+[1000]	valid_0's binary_logloss: 0.00555028	valid_1's binary_logloss: 0.00561843
+num_leaves, val_score: 0.005618:  25%|##5       | 5/20 [00:50<02:05,  8.35s/it]num_leaves, val_score: 0.005618:  30%|###       | 6/20 [00:50<01:49,  7.81s/it][32m[I 2021-01-11 18:15:26,912][0m Trial 12 finished with value: 0.005618429229306125 and parameters: {'num_leaves': 188}. Best is trial 10 with value: 0.005618296596890519.[0m
+num_leaves, val_score: 0.005618:  30%|###       | 6/20 [00:50<01:49,  7.81s/it]Training until validation scores don't improve for 100 rounds
+[100]	valid_0's binary_logloss: 0.275789	valid_1's binary_logloss: 0.276932
+[200]	valid_0's binary_logloss: 0.176449	valid_1's binary_logloss: 0.177676
+[300]	valid_0's binary_logloss: 0.115872	valid_1's binary_logloss: 0.116263
+[400]	valid_0's binary_logloss: 0.0783775	valid_1's binary_logloss: 0.0786142
+[500]	valid_0's binary_logloss: 0.0539272	valid_1's binary_logloss: 0.0542433
+[600]	valid_0's binary_logloss: 0.0379148	valid_1's binary_logloss: 0.0383341
+[700]	valid_0's binary_logloss: 0.0273682	valid_1's binary_logloss: 0.0277675
+[800]	valid_0's binary_logloss: 0.0202843	valid_1's binary_logloss: 0.0206594
+[900]	valid_0's binary_logloss: 0.0155666	valid_1's binary_logloss: 0.0159192
+[1000]	valid_0's binary_logloss: 0.0124371	valid_1's binary_logloss: 0.0126124
+Did not meet early stopping. Best iteration is:
+[1000]	valid_0's binary_logloss: 0.0124371	valid_1's binary_logloss: 0.0126124
+num_leaves, val_score: 0.005618:  30%|###       | 6/20 [00:53<01:49,  7.81s/it]num_leaves, val_score: 0.005618:  35%|###5      | 7/20 [00:53<01:23,  6.39s/it][32m[I 2021-01-11 18:15:30,376][0m Trial 13 finished with value: 0.012612441227178889 and parameters: {'num_leaves': 18}. Best is trial 10 with value: 0.005618296596890519.[0m
+num_leaves, val_score: 0.005618:  35%|###5      | 7/20 [00:53<01:23,  6.39s/it]Training until validation scores don't improve for 100 rounds
+[100]	valid_0's binary_logloss: 0.0107106	valid_1's binary_logloss: 0.0108436
+[200]	valid_0's binary_logloss: 0.00564442	valid_1's binary_logloss: 0.00571188
+[300]	valid_0's binary_logloss: 0.00556268	valid_1's binary_logloss: 0.00563099
+[400]	valid_0's binary_logloss: 0.00555629	valid_1's binary_logloss: 0.00562461
+[500]	valid_0's binary_logloss: 0.00555387	valid_1's binary_logloss: 0.00562203
+[600]	valid_0's binary_logloss: 0.00555251	valid_1's binary_logloss: 0.00562089
+[700]	valid_0's binary_logloss: 0.00555164	valid_1's binary_logloss: 0.00561984
+[800]	valid_0's binary_logloss: 0.00555098	valid_1's binary_logloss: 0.0056191
+[900]	valid_0's binary_logloss: 0.00555041	valid_1's binary_logloss: 0.00561846
+[1000]	valid_0's binary_logloss: 0.00555007	valid_1's binary_logloss: 0.00561817
+Did not meet early stopping. Best iteration is:
+[1000]	valid_0's binary_logloss: 0.00555007	valid_1's binary_logloss: 0.00561817
+num_leaves, val_score: 0.005618:  35%|###5      | 7/20 [01:01<01:23,  6.39s/it]num_leaves, val_score: 0.005618:  40%|####      | 8/20 [01:01<01:21,  6.81s/it][32m[I 2021-01-11 18:15:38,075][0m Trial 14 finished with value: 0.005618167317396328 and parameters: {'num_leaves': 256}. Best is trial 14 with value: 0.005618167317396328.[0m
+num_leaves, val_score: 0.005618:  40%|####      | 8/20 [01:01<01:21,  6.81s/it]Training until validation scores don't improve for 100 rounds
+[100]	valid_0's binary_logloss: 0.013985	valid_1's binary_logloss: 0.0142072
+[200]	valid_0's binary_logloss: 0.00581463	valid_1's binary_logloss: 0.00589764
+[300]	valid_0's binary_logloss: 0.00556843	valid_1's binary_logloss: 0.00563705
+[400]	valid_0's binary_logloss: 0.00555738	valid_1's binary_logloss: 0.00562564
+[500]	valid_0's binary_logloss: 0.0055543	valid_1's binary_logloss: 0.00562244
+[600]	valid_0's binary_logloss: 0.00555276	valid_1's binary_logloss: 0.00562099
+[700]	valid_0's binary_logloss: 0.00555186	valid_1's binary_logloss: 0.00562005
+[800]	valid_0's binary_logloss: 0.00555116	valid_1's binary_logloss: 0.00561946
+[900]	valid_0's binary_logloss: 0.00555078	valid_1's binary_logloss: 0.00561901
+[1000]	valid_0's binary_logloss: 0.0055504	valid_1's binary_logloss: 0.00561859
+Did not meet early stopping. Best iteration is:
+[1000]	valid_0's binary_logloss: 0.0055504	valid_1's binary_logloss: 0.00561859
+num_leaves, val_score: 0.005618:  40%|####      | 8/20 [01:11<01:21,  6.81s/it]num_leaves, val_score: 0.005618:  45%|####5     | 9/20 [01:11<01:27,  7.93s/it][32m[I 2021-01-11 18:15:48,465][0m Trial 15 finished with value: 0.005618592458885676 and parameters: {'num_leaves': 182}. Best is trial 14 with value: 0.005618167317396328.[0m
+num_leaves, val_score: 0.005618:  45%|####5     | 9/20 [01:11<01:27,  7.93s/it]Training until validation scores don't improve for 100 rounds
+[100]	valid_0's binary_logloss: 0.284715	valid_1's binary_logloss: 0.288082
+[200]	valid_0's binary_logloss: 0.185525	valid_1's binary_logloss: 0.188661
+[300]	valid_0's binary_logloss: 0.124507	valid_1's binary_logloss: 0.127196
+[400]	valid_0's binary_logloss: 0.0857739	valid_1's binary_logloss: 0.0877643
+[500]	valid_0's binary_logloss: 0.0600459	valid_1's binary_logloss: 0.0616112
+[600]	valid_0's binary_logloss: 0.0428288	valid_1's binary_logloss: 0.0435558
+[700]	valid_0's binary_logloss: 0.0311417	valid_1's binary_logloss: 0.0314916
+[800]	valid_0's binary_logloss: 0.0231368	valid_1's binary_logloss: 0.0234397
+[900]	valid_0's binary_logloss: 0.0178711	valid_1's binary_logloss: 0.0181298
+[1000]	valid_0's binary_logloss: 0.0142717	valid_1's binary_logloss: 0.0144296
+Did not meet early stopping. Best iteration is:
+[1000]	valid_0's binary_logloss: 0.0142717	valid_1's binary_logloss: 0.0144296
+num_leaves, val_score: 0.005618:  45%|####5     | 9/20 [01:16<01:27,  7.93s/it]num_leaves, val_score: 0.005618:  50%|#####     | 10/20 [01:16<01:09,  6.96s/it][32m[I 2021-01-11 18:15:53,271][0m Trial 16 finished with value: 0.014429630271163759 and parameters: {'num_leaves': 17}. Best is trial 14 with value: 0.005618167317396328.[0m
+num_leaves, val_score: 0.005618:  50%|#####     | 10/20 [01:16<01:09,  6.96s/it]Training until validation scores don't improve for 100 rounds
+[100]	valid_0's binary_logloss: 0.0603789	valid_1's binary_logloss: 0.0609292
+[200]	valid_0's binary_logloss: 0.0140252	valid_1's binary_logloss: 0.0142519
+[300]	valid_0's binary_logloss: 0.00715282	valid_1's binary_logloss: 0.00725234
+[400]	valid_0's binary_logloss: 0.00592118	valid_1's binary_logloss: 0.0060032
+[500]	valid_0's binary_logloss: 0.00563802	valid_1's binary_logloss: 0.00571136
+[600]	valid_0's binary_logloss: 0.0055687	valid_1's binary_logloss: 0.00563765
+[700]	valid_0's binary_logloss: 0.00555704	valid_1's binary_logloss: 0.00562519
+[800]	valid_0's binary_logloss: 0.00555395	valid_1's binary_logloss: 0.00562198
+[900]	valid_0's binary_logloss: 0.00555255	valid_1's binary_logloss: 0.00562085
+[1000]	valid_0's binary_logloss: 0.00555165	valid_1's binary_logloss: 0.00561994
+Did not meet early stopping. Best iteration is:
+[1000]	valid_0's binary_logloss: 0.00555165	valid_1's binary_logloss: 0.00561994
+num_leaves, val_score: 0.005618:  50%|#####     | 10/20 [01:24<01:09,  6.96s/it]num_leaves, val_score: 0.005618:  55%|#####5    | 11/20 [01:24<01:06,  7.38s/it][32m[I 2021-01-11 18:16:01,582][0m Trial 17 finished with value: 0.005619938512083364 and parameters: {'num_leaves': 78}. Best is trial 14 with value: 0.005618167317396328.[0m
+num_leaves, val_score: 0.005618:  55%|#####5    | 11/20 [01:24<01:06,  7.38s/it]Training until validation scores don't improve for 100 rounds
+[100]	valid_0's binary_logloss: 0.0119119	valid_1's binary_logloss: 0.0120425
+[200]	valid_0's binary_logloss: 0.00569758	valid_1's binary_logloss: 0.0057714
+[300]	valid_0's binary_logloss: 0.00556404	valid_1's binary_logloss: 0.00563207
+[400]	valid_0's binary_logloss: 0.00555682	valid_1's binary_logloss: 0.00562475
+[500]	valid_0's binary_logloss: 0.00555415	valid_1's binary_logloss: 0.00562251
+[600]	valid_0's binary_logloss: 0.00555263	valid_1's binary_logloss: 0.00562078
+[700]	valid_0's binary_logloss: 0.00555174	valid_1's binary_logloss: 0.00561991
+[800]	valid_0's binary_logloss: 0.00555121	valid_1's binary_logloss: 0.00561933
+[900]	valid_0's binary_logloss: 0.00555072	valid_1's binary_logloss: 0.00561886
+[1000]	valid_0's binary_logloss: 0.00555045	valid_1's binary_logloss: 0.00561866
+Did not meet early stopping. Best iteration is:
+[1000]	valid_0's binary_logloss: 0.00555045	valid_1's binary_logloss: 0.00561866
+num_leaves, val_score: 0.005618:  55%|#####5    | 11/20 [01:33<01:06,  7.38s/it]num_leaves, val_score: 0.005618:  60%|######    | 12/20 [01:33<01:03,  7.88s/it][32m[I 2021-01-11 18:16:10,629][0m Trial 18 finished with value: 0.005618661944630464 and parameters: {'num_leaves': 210}. Best is trial 14 with value: 0.005618167317396328.[0m
+num_leaves, val_score: 0.005618:  60%|######    | 12/20 [01:33<01:03,  7.88s/it]Training until validation scores don't improve for 100 rounds
+[100]	valid_0's binary_logloss: 0.0185234	valid_1's binary_logloss: 0.0189472
+[200]	valid_0's binary_logloss: 0.0061294	valid_1's binary_logloss: 0.0062271
+[300]	valid_0's binary_logloss: 0.00558667	valid_1's binary_logloss: 0.00565727
+[400]	valid_0's binary_logloss: 0.00555937	valid_1's binary_logloss: 0.00562761
+[500]	valid_0's binary_logloss: 0.00555504	valid_1's binary_logloss: 0.00562327
+[600]	valid_0's binary_logloss: 0.00555318	valid_1's binary_logloss: 0.00562145
+[700]	valid_0's binary_logloss: 0.00555218	valid_1's binary_logloss: 0.00562041
+[800]	valid_0's binary_logloss: 0.00555137	valid_1's binary_logloss: 0.00561966
+[900]	valid_0's binary_logloss: 0.00555082	valid_1's binary_logloss: 0.00561902
+[1000]	valid_0's binary_logloss: 0.00555038	valid_1's binary_logloss: 0.00561856
+Did not meet early stopping. Best iteration is:
+[1000]	valid_0's binary_logloss: 0.00555038	valid_1's binary_logloss: 0.00561856
+num_leaves, val_score: 0.005618:  60%|######    | 12/20 [01:41<01:03,  7.88s/it]num_leaves, val_score: 0.005618:  65%|######5   | 13/20 [01:41<00:54,  7.85s/it][32m[I 2021-01-11 18:16:18,392][0m Trial 19 finished with value: 0.005618563846954435 and parameters: {'num_leaves': 152}. Best is trial 14 with value: 0.005618167317396328.[0m
+num_leaves, val_score: 0.005618:  65%|######5   | 13/20 [01:41<00:54,  7.85s/it]Training until validation scores don't improve for 100 rounds
+[100]	valid_0's binary_logloss: 0.0107159	valid_1's binary_logloss: 0.010901
+[200]	valid_0's binary_logloss: 0.00564356	valid_1's binary_logloss: 0.00571172
+[300]	valid_0's binary_logloss: 0.00556221	valid_1's binary_logloss: 0.00563077
+[400]	valid_0's binary_logloss: 0.00555585	valid_1's binary_logloss: 0.00562437
+[500]	valid_0's binary_logloss: 0.00555381	valid_1's binary_logloss: 0.00562223
+[600]	valid_0's binary_logloss: 0.00555252	valid_1's binary_logloss: 0.00562079
+[700]	valid_0's binary_logloss: 0.00555161	valid_1's binary_logloss: 0.00562004
+[800]	valid_0's binary_logloss: 0.00555095	valid_1's binary_logloss: 0.00561925
+[900]	valid_0's binary_logloss: 0.00555058	valid_1's binary_logloss: 0.00561879
+[1000]	valid_0's binary_logloss: 0.00555025	valid_1's binary_logloss: 0.00561852
+Did not meet early stopping. Best iteration is:
+[1000]	valid_0's binary_logloss: 0.00555025	valid_1's binary_logloss: 0.00561852
+num_leaves, val_score: 0.005618:  65%|######5   | 13/20 [01:50<00:54,  7.85s/it]num_leaves, val_score: 0.005618:  70%|#######   | 14/20 [01:50<00:48,  8.04s/it][32m[I 2021-01-11 18:16:26,871][0m Trial 20 finished with value: 0.005618519001344657 and parameters: {'num_leaves': 255}. Best is trial 14 with value: 0.005618167317396328.[0m
+num_leaves, val_score: 0.005618:  70%|#######   | 14/20 [01:50<00:48,  8.04s/it]Training until validation scores don't improve for 100 rounds
+[100]	valid_0's binary_logloss: 0.011278	valid_1's binary_logloss: 0.0114739
+[200]	valid_0's binary_logloss: 0.00566863	valid_1's binary_logloss: 0.00574375
+[300]	valid_0's binary_logloss: 0.00556344	valid_1's binary_logloss: 0.00563181
+[400]	valid_0's binary_logloss: 0.00555638	valid_1's binary_logloss: 0.00562477
+[500]	valid_0's binary_logloss: 0.00555405	valid_1's binary_logloss: 0.00562217
+[600]	valid_0's binary_logloss: 0.00555255	valid_1's binary_logloss: 0.00562076
+[700]	valid_0's binary_logloss: 0.00555168	valid_1's binary_logloss: 0.00561985
+[800]	valid_0's binary_logloss: 0.00555105	valid_1's binary_logloss: 0.00561929
+[900]	valid_0's binary_logloss: 0.00555054	valid_1's binary_logloss: 0.00561874
+[1000]	valid_0's binary_logloss: 0.00555023	valid_1's binary_logloss: 0.00561845
+Did not meet early stopping. Best iteration is:
+[1000]	valid_0's binary_logloss: 0.00555023	valid_1's binary_logloss: 0.00561845
+num_leaves, val_score: 0.005618:  70%|#######   | 14/20 [01:57<00:48,  8.04s/it]num_leaves, val_score: 0.005618:  75%|#######5  | 15/20 [01:57<00:39,  7.98s/it][32m[I 2021-01-11 18:16:34,712][0m Trial 21 finished with value: 0.005618451369176803 and parameters: {'num_leaves': 223}. Best is trial 14 with value: 0.005618167317396328.[0m
+num_leaves, val_score: 0.005618:  75%|#######5  | 15/20 [01:57<00:39,  7.98s/it]Training until validation scores don't improve for 100 rounds
+[100]	valid_0's binary_logloss: 0.0112147	valid_1's binary_logloss: 0.0113656
+[200]	valid_0's binary_logloss: 0.00566582	valid_1's binary_logloss: 0.00573354
+[300]	valid_0's binary_logloss: 0.00556335	valid_1's binary_logloss: 0.00563167
+[400]	valid_0's binary_logloss: 0.00555628	valid_1's binary_logloss: 0.00562453
+[500]	valid_0's binary_logloss: 0.00555382	valid_1's binary_logloss: 0.00562221
+[600]	valid_0's binary_logloss: 0.00555247	valid_1's binary_logloss: 0.00562057
+[700]	valid_0's binary_logloss: 0.00555166	valid_1's binary_logloss: 0.00561977
+[800]	valid_0's binary_logloss: 0.00555106	valid_1's binary_logloss: 0.00561941
+[900]	valid_0's binary_logloss: 0.00555057	valid_1's binary_logloss: 0.00561882
+[1000]	valid_0's binary_logloss: 0.00555022	valid_1's binary_logloss: 0.00561846
+Did not meet early stopping. Best iteration is:
+[1000]	valid_0's binary_logloss: 0.00555022	valid_1's binary_logloss: 0.00561846
+num_leaves, val_score: 0.005618:  75%|#######5  | 15/20 [02:06<00:39,  7.98s/it]num_leaves, val_score: 0.005618:  80%|########  | 16/20 [02:06<00:32,  8.12s/it][32m[I 2021-01-11 18:16:43,160][0m Trial 22 finished with value: 0.005618460074184645 and parameters: {'num_leaves': 226}. Best is trial 14 with value: 0.005618167317396328.[0m
+num_leaves, val_score: 0.005618:  80%|########  | 16/20 [02:06<00:32,  8.12s/it]Training until validation scores don't improve for 100 rounds
+[100]	valid_0's binary_logloss: 0.0107552	valid_1's binary_logloss: 0.0109082
+[200]	valid_0's binary_logloss: 0.0056453	valid_1's binary_logloss: 0.00571449
+[300]	valid_0's binary_logloss: 0.00556265	valid_1's binary_logloss: 0.00563051
+[400]	valid_0's binary_logloss: 0.00555595	valid_1's binary_logloss: 0.00562404
+[500]	valid_0's binary_logloss: 0.00555353	valid_1's binary_logloss: 0.00562167
+[600]	valid_0's binary_logloss: 0.00555215	valid_1's binary_logloss: 0.00562035
+[700]	valid_0's binary_logloss: 0.00555141	valid_1's binary_logloss: 0.00561955
+[800]	valid_0's binary_logloss: 0.0055509	valid_1's binary_logloss: 0.00561892
+[900]	valid_0's binary_logloss: 0.00555047	valid_1's binary_logloss: 0.00561853
+[1000]	valid_0's binary_logloss: 0.00555018	valid_1's binary_logloss: 0.00561826
+Did not meet early stopping. Best iteration is:
+[1000]	valid_0's binary_logloss: 0.00555018	valid_1's binary_logloss: 0.00561826
+num_leaves, val_score: 0.005618:  80%|########  | 16/20 [02:14<00:32,  8.12s/it]num_leaves, val_score: 0.005618:  85%|########5 | 17/20 [02:14<00:24,  8.24s/it][32m[I 2021-01-11 18:16:51,669][0m Trial 23 finished with value: 0.005618259264948515 and parameters: {'num_leaves': 249}. Best is trial 14 with value: 0.005618167317396328.[0m
+num_leaves, val_score: 0.005618:  85%|########5 | 17/20 [02:14<00:24,  8.24s/it]Training until validation scores don't improve for 100 rounds
+[100]	valid_0's binary_logloss: 0.0107552	valid_1's binary_logloss: 0.0109082
+[200]	valid_0's binary_logloss: 0.0056453	valid_1's binary_logloss: 0.00571449
+[300]	valid_0's binary_logloss: 0.00556265	valid_1's binary_logloss: 0.00563051
+[400]	valid_0's binary_logloss: 0.00555595	valid_1's binary_logloss: 0.00562404
+[500]	valid_0's binary_logloss: 0.00555353	valid_1's binary_logloss: 0.00562167
+[600]	valid_0's binary_logloss: 0.00555215	valid_1's binary_logloss: 0.00562035
+[700]	valid_0's binary_logloss: 0.00555141	valid_1's binary_logloss: 0.00561955
+[800]	valid_0's binary_logloss: 0.0055509	valid_1's binary_logloss: 0.00561892
+[900]	valid_0's binary_logloss: 0.00555047	valid_1's binary_logloss: 0.00561853
+[1000]	valid_0's binary_logloss: 0.00555018	valid_1's binary_logloss: 0.00561826
+Did not meet early stopping. Best iteration is:
+[1000]	valid_0's binary_logloss: 0.00555018	valid_1's binary_logloss: 0.00561826
+num_leaves, val_score: 0.005618:  85%|########5 | 17/20 [02:23<00:24,  8.24s/it]num_leaves, val_score: 0.005618:  90%|######### | 18/20 [02:23<00:16,  8.22s/it][32m[I 2021-01-11 18:16:59,833][0m Trial 24 finished with value: 0.00561825926494886 and parameters: {'num_leaves': 249}. Best is trial 14 with value: 0.005618167317396328.[0m
+num_leaves, val_score: 0.005618:  90%|######### | 18/20 [02:23<00:16,  8.22s/it]Training until validation scores don't improve for 100 rounds
+[100]	valid_0's binary_logloss: 0.0133822	valid_1's binary_logloss: 0.0135493
+[200]	valid_0's binary_logloss: 0.00576894	valid_1's binary_logloss: 0.00584344
+[300]	valid_0's binary_logloss: 0.00556663	valid_1's binary_logloss: 0.00563476
+[400]	valid_0's binary_logloss: 0.00555715	valid_1's binary_logloss: 0.00562539
+[500]	valid_0's binary_logloss: 0.00555411	valid_1's binary_logloss: 0.00562221
+[600]	valid_0's binary_logloss: 0.00555264	valid_1's binary_logloss: 0.00562089
+[700]	valid_0's binary_logloss: 0.00555175	valid_1's binary_logloss: 0.00561997
+[800]	valid_0's binary_logloss: 0.00555116	valid_1's binary_logloss: 0.00561938
+[900]	valid_0's binary_logloss: 0.0055506	valid_1's binary_logloss: 0.00561884
+[1000]	valid_0's binary_logloss: 0.00555027	valid_1's binary_logloss: 0.0056184
+Did not meet early stopping. Best iteration is:
+[1000]	valid_0's binary_logloss: 0.00555027	valid_1's binary_logloss: 0.0056184
+num_leaves, val_score: 0.005618:  90%|######### | 18/20 [02:32<00:16,  8.22s/it]num_leaves, val_score: 0.005618:  95%|#########5| 19/20 [02:32<00:08,  8.69s/it][32m[I 2021-01-11 18:17:09,637][0m Trial 25 finished with value: 0.005618395921796806 and parameters: {'num_leaves': 190}. Best is trial 14 with value: 0.005618167317396328.[0m
+num_leaves, val_score: 0.005618:  95%|#########5| 19/20 [02:32<00:08,  8.69s/it]Training until validation scores don't improve for 100 rounds
+[100]	valid_0's binary_logloss: 0.056978	valid_1's binary_logloss: 0.0577905
+[200]	valid_0's binary_logloss: 0.0129906	valid_1's binary_logloss: 0.0131279
+[300]	valid_0's binary_logloss: 0.00687923	valid_1's binary_logloss: 0.00699282
+[400]	valid_0's binary_logloss: 0.00584358	valid_1's binary_logloss: 0.00592884
+[500]	valid_0's binary_logloss: 0.00561751	valid_1's binary_logloss: 0.0056896
+[600]	valid_0's binary_logloss: 0.00556422	valid_1's binary_logloss: 0.00563206
+[700]	valid_0's binary_logloss: 0.00555615	valid_1's binary_logloss: 0.00562432
+[800]	valid_0's binary_logloss: 0.00555349	valid_1's binary_logloss: 0.00562157
+[900]	valid_0's binary_logloss: 0.00555221	valid_1's binary_logloss: 0.00562046
+[1000]	valid_0's binary_logloss: 0.00555143	valid_1's binary_logloss: 0.00561949
+Did not meet early stopping. Best iteration is:
+[1000]	valid_0's binary_logloss: 0.00555143	valid_1's binary_logloss: 0.00561949
+num_leaves, val_score: 0.005618:  95%|#########5| 19/20 [02:49<00:08,  8.69s/it]num_leaves, val_score: 0.005618: 100%|##########| 20/20 [02:49<00:00, 11.14s/it][32m[I 2021-01-11 18:17:26,497][0m Trial 26 finished with value: 0.005619492885170003 and parameters: {'num_leaves': 81}. Best is trial 14 with value: 0.005618167317396328.[0m
+num_leaves, val_score: 0.005618: 100%|##########| 20/20 [02:49<00:00,  8.49s/it]
+  0%|          | 0/10 [00:00<?, ?it/s]bagging, val_score: 0.005618:   0%|          | 0/10 [00:00<?, ?it/s]Training until validation scores don't improve for 100 rounds
+[100]	valid_0's binary_logloss: 0.0558711	valid_1's binary_logloss: 0.0558301
+[200]	valid_0's binary_logloss: 0.0129139	valid_1's binary_logloss: 0.0118401
+[300]	valid_0's binary_logloss: 0.00702112	valid_1's binary_logloss: 0.00745213
+[400]	valid_0's binary_logloss: 0.00639513	valid_1's binary_logloss: 0.00395622
+[500]	valid_0's binary_logloss: 0.00597459	valid_1's binary_logloss: 0.00553243
+Early stopping, best iteration is:
+[400]	valid_0's binary_logloss: 0.00639513	valid_1's binary_logloss: 0.00395622
+bagging, val_score: 0.003956:   0%|          | 0/10 [00:06<?, ?it/s]bagging, val_score: 0.003956:  10%|#         | 1/10 [00:06<00:54,  6.01s/it][32m[I 2021-01-11 18:17:32,509][0m Trial 27 finished with value: 0.0039562226506987715 and parameters: {'bagging_fraction': 0.452599666040136, 'bagging_freq': 4}. Best is trial 27 with value: 0.0039562226506987715.[0m
+bagging, val_score: 0.003956:  10%|#         | 1/10 [00:06<00:54,  6.01s/it]Training until validation scores don't improve for 100 rounds
+[100]	valid_0's binary_logloss: 0.0669652	valid_1's binary_logloss: 0.0685172
+[200]	valid_0's binary_logloss: 0.0155764	valid_1's binary_logloss: 0.0145917
+[300]	valid_0's binary_logloss: 0.00780265	valid_1's binary_logloss: 0.00834604
+[400]	valid_0's binary_logloss: 0.00650587	valid_1's binary_logloss: 0.00441182
+[500]	valid_0's binary_logloss: 0.00604589	valid_1's binary_logloss: 0.00572654
+Early stopping, best iteration is:
+[400]	valid_0's binary_logloss: 0.00650587	valid_1's binary_logloss: 0.00441182
+bagging, val_score: 0.003956:  10%|#         | 1/10 [00:10<00:54,  6.01s/it]bagging, val_score: 0.003956:  20%|##        | 2/10 [00:10<00:42,  5.30s/it][32m[I 2021-01-11 18:17:37,313][0m Trial 28 finished with value: 0.004411816365747663 and parameters: {'bagging_fraction': 0.4158690298604505, 'bagging_freq': 4}. Best is trial 27 with value: 0.0039562226506987715.[0m
+bagging, val_score: 0.003956:  20%|##        | 2/10 [00:10<00:42,  5.30s/it]Training until validation scores don't improve for 100 rounds
+[100]	valid_0's binary_logloss: 0.0698269	valid_1's binary_logloss: 0.0687348
+[200]	valid_0's binary_logloss: 0.0161597	valid_1's binary_logloss: 0.0153216
+[300]	valid_0's binary_logloss: 0.0079634	valid_1's binary_logloss: 0.00871636
+[400]	valid_0's binary_logloss: 0.00659128	valid_1's binary_logloss: 0.00442104
+[500]	valid_0's binary_logloss: 0.00598721	valid_1's binary_logloss: 0.00549893
+Early stopping, best iteration is:
+[400]	valid_0's binary_logloss: 0.00659128	valid_1's binary_logloss: 0.00442104
+bagging, val_score: 0.003956:  20%|##        | 2/10 [00:15<00:42,  5.30s/it]bagging, val_score: 0.003956:  30%|###       | 3/10 [00:15<00:36,  5.17s/it][32m[I 2021-01-11 18:17:42,324][0m Trial 29 finished with value: 0.004421035981049639 and parameters: {'bagging_fraction': 0.40480646057644076, 'bagging_freq': 4}. Best is trial 27 with value: 0.0039562226506987715.[0m
+bagging, val_score: 0.003956:  30%|###       | 3/10 [00:15<00:36,  5.17s/it]Training until validation scores don't improve for 100 rounds
+[100]	valid_0's binary_logloss: 0.060237	valid_1's binary_logloss: 0.0587966
+[200]	valid_0's binary_logloss: 0.0136475	valid_1's binary_logloss: 0.0124342
+[300]	valid_0's binary_logloss: 0.00727676	valid_1's binary_logloss: 0.0076088
+[400]	valid_0's binary_logloss: 0.00646629	valid_1's binary_logloss: 0.00416037
+[500]	valid_0's binary_logloss: 0.00598439	valid_1's binary_logloss: 0.00567007
+Early stopping, best iteration is:
+[400]	valid_0's binary_logloss: 0.00646629	valid_1's binary_logloss: 0.00416037
+bagging, val_score: 0.003956:  30%|###       | 3/10 [00:20<00:36,  5.17s/it]bagging, val_score: 0.003956:  40%|####      | 4/10 [00:20<00:30,  5.01s/it][32m[I 2021-01-11 18:17:47,097][0m Trial 30 finished with value: 0.004160366199468001 and parameters: {'bagging_fraction': 0.43982700280418097, 'bagging_freq': 4}. Best is trial 27 with value: 0.0039562226506987715.[0m
+bagging, val_score: 0.003956:  40%|####      | 4/10 [00:20<00:30,  5.01s/it]Training until validation scores don't improve for 100 rounds
+[100]	valid_0's binary_logloss: 0.0667691	valid_1's binary_logloss: 0.0678072
+[200]	valid_0's binary_logloss: 0.0159362	valid_1's binary_logloss: 0.0150313
+[300]	valid_0's binary_logloss: 0.00790389	valid_1's binary_logloss: 0.00861822
+[400]	valid_0's binary_logloss: 0.00660286	valid_1's binary_logloss: 0.00436343
+[500]	valid_0's binary_logloss: 0.00607781	valid_1's binary_logloss: 0.00561336
+Early stopping, best iteration is:
+[400]	valid_0's binary_logloss: 0.00660286	valid_1's binary_logloss: 0.00436343
+bagging, val_score: 0.003956:  40%|####      | 4/10 [00:26<00:30,  5.01s/it]bagging, val_score: 0.003956:  50%|#####     | 5/10 [00:26<00:26,  5.30s/it][32m[I 2021-01-11 18:17:52,905][0m Trial 31 finished with value: 0.004363433151812506 and parameters: {'bagging_fraction': 0.41053653602597534, 'bagging_freq': 4}. Best is trial 27 with value: 0.0039562226506987715.[0m
+bagging, val_score: 0.003956:  50%|#####     | 5/10 [00:26<00:26,  5.30s/it]Training until validation scores don't improve for 100 rounds
+[100]	valid_0's binary_logloss: 0.0661973	valid_1's binary_logloss: 0.0666978
+[200]	valid_0's binary_logloss: 0.0157135	valid_1's binary_logloss: 0.0149453
+[300]	valid_0's binary_logloss: 0.00779918	valid_1's binary_logloss: 0.00842172
+[400]	valid_0's binary_logloss: 0.00660988	valid_1's binary_logloss: 0.00434166
+[500]	valid_0's binary_logloss: 0.0060187	valid_1's binary_logloss: 0.00544077
+Early stopping, best iteration is:
+[400]	valid_0's binary_logloss: 0.00660988	valid_1's binary_logloss: 0.00434166
+bagging, val_score: 0.003956:  50%|#####     | 5/10 [00:33<00:26,  5.30s/it]bagging, val_score: 0.003956:  60%|######    | 6/10 [00:33<00:23,  5.89s/it][32m[I 2021-01-11 18:17:59,940][0m Trial 32 finished with value: 0.004341664437100697 and parameters: {'bagging_fraction': 0.41683657053012946, 'bagging_freq': 4}. Best is trial 27 with value: 0.0039562226506987715.[0m
+bagging, val_score: 0.003956:  60%|######    | 6/10 [00:33<00:23,  5.89s/it]Training until validation scores don't improve for 100 rounds
+[100]	valid_0's binary_logloss: 0.0615784	valid_1's binary_logloss: 0.0616205
+[200]	valid_0's binary_logloss: 0.0141934	valid_1's binary_logloss: 0.0134551
+[300]	valid_0's binary_logloss: 0.0073924	valid_1's binary_logloss: 0.0079716
+[400]	valid_0's binary_logloss: 0.0065278	valid_1's binary_logloss: 0.00417461
+[500]	valid_0's binary_logloss: 0.00597843	valid_1's binary_logloss: 0.00534497
+Early stopping, best iteration is:
+[400]	valid_0's binary_logloss: 0.0065278	valid_1's binary_logloss: 0.00417461
+bagging, val_score: 0.003956:  60%|######    | 6/10 [00:37<00:23,  5.89s/it]bagging, val_score: 0.003956:  70%|#######   | 7/10 [00:37<00:16,  5.37s/it][32m[I 2021-01-11 18:18:04,232][0m Trial 33 finished with value: 0.004174612915461341 and parameters: {'bagging_fraction': 0.4317275749785896, 'bagging_freq': 4}. Best is trial 27 with value: 0.0039562226506987715.[0m
+bagging, val_score: 0.003956:  70%|#######   | 7/10 [00:37<00:16,  5.37s/it]Training until validation scores don't improve for 100 rounds
+[100]	valid_0's binary_logloss: 0.0514784	valid_1's binary_logloss: 0.0524975
+[200]	valid_0's binary_logloss: 0.0117586	valid_1's binary_logloss: 0.0103113
+[300]	valid_0's binary_logloss: 0.00686032	valid_1's binary_logloss: 0.00728344
+[400]	valid_0's binary_logloss: 0.0063998	valid_1's binary_logloss: 0.00414249
+[500]	valid_0's binary_logloss: 0.0059078	valid_1's binary_logloss: 0.00522726
+Early stopping, best iteration is:
+[400]	valid_0's binary_logloss: 0.0063998	valid_1's binary_logloss: 0.00414249
+bagging, val_score: 0.003956:  70%|#######   | 7/10 [00:42<00:16,  5.37s/it]bagging, val_score: 0.003956:  80%|########  | 8/10 [00:42<00:10,  5.23s/it][32m[I 2021-01-11 18:18:09,180][0m Trial 34 finished with value: 0.004142492834755286 and parameters: {'bagging_fraction': 0.471643599547346, 'bagging_freq': 4}. Best is trial 27 with value: 0.0039562226506987715.[0m
+bagging, val_score: 0.003956:  80%|########  | 8/10 [00:42<00:10,  5.23s/it]Training until validation scores don't improve for 100 rounds
+[100]	valid_0's binary_logloss: 0.0296827	valid_1's binary_logloss: 0.029846
+[200]	valid_0's binary_logloss: 0.00731199	valid_1's binary_logloss: 0.00751244
+[300]	valid_0's binary_logloss: 0.00576141	valid_1's binary_logloss: 0.00615293
+Early stopping, best iteration is:
+[278]	valid_0's binary_logloss: 0.00593575	valid_1's binary_logloss: 0.00532907
+bagging, val_score: 0.003956:  80%|########  | 8/10 [00:47<00:10,  5.23s/it]bagging, val_score: 0.003956:  90%|######### | 9/10 [00:47<00:05,  5.10s/it][32m[I 2021-01-11 18:18:13,989][0m Trial 35 finished with value: 0.00532907135909761 and parameters: {'bagging_fraction': 0.6107377434363921, 'bagging_freq': 1}. Best is trial 27 with value: 0.0039562226506987715.[0m
+bagging, val_score: 0.003956:  90%|######### | 9/10 [00:47<00:05,  5.10s/it]Training until validation scores don't improve for 100 rounds
+[100]	valid_0's binary_logloss: 0.0390063	valid_1's binary_logloss: 0.040291
+[200]	valid_0's binary_logloss: 0.00886242	valid_1's binary_logloss: 0.00902116
+[300]	valid_0's binary_logloss: 0.00654572	valid_1's binary_logloss: 0.00522509
+[400]	valid_0's binary_logloss: 0.0059849	valid_1's binary_logloss: 0.00586247
+Early stopping, best iteration is:
+[312]	valid_0's binary_logloss: 0.00674354	valid_1's binary_logloss: 0.00474593
+bagging, val_score: 0.003956:  90%|######### | 9/10 [00:51<00:05,  5.10s/it]bagging, val_score: 0.003956: 100%|##########| 10/10 [00:51<00:00,  4.83s/it][32m[I 2021-01-11 18:18:18,204][0m Trial 36 finished with value: 0.004745926066598235 and parameters: {'bagging_fraction': 0.5582489675601301, 'bagging_freq': 6}. Best is trial 27 with value: 0.0039562226506987715.[0m
+bagging, val_score: 0.003956: 100%|##########| 10/10 [00:51<00:00,  5.17s/it]
+  0%|          | 0/3 [00:00<?, ?it/s]feature_fraction_stage2, val_score: 0.003956:   0%|          | 0/3 [00:00<?, ?it/s]Training until validation scores don't improve for 100 rounds
+[100]	valid_0's binary_logloss: 0.0575705	valid_1's binary_logloss: 0.0569281
+[200]	valid_0's binary_logloss: 0.0131366	valid_1's binary_logloss: 0.0116387
+[300]	valid_0's binary_logloss: 0.0071251	valid_1's binary_logloss: 0.00758319
+[400]	valid_0's binary_logloss: 0.0063787	valid_1's binary_logloss: 0.00400803
+[500]	valid_0's binary_logloss: 0.00597175	valid_1's binary_logloss: 0.00530571
+Early stopping, best iteration is:
+[400]	valid_0's binary_logloss: 0.0063787	valid_1's binary_logloss: 0.00400803
+feature_fraction_stage2, val_score: 0.003956:   0%|          | 0/3 [00:04<?, ?it/s]feature_fraction_stage2, val_score: 0.003956:  33%|###3      | 1/3 [00:04<00:08,  4.21s/it][32m[I 2021-01-11 18:18:22,419][0m Trial 37 finished with value: 0.004008030281345342 and parameters: {'feature_fraction': 0.92}. Best is trial 37 with value: 0.004008030281345342.[0m
+feature_fraction_stage2, val_score: 0.003956:  33%|###3      | 1/3 [00:04<00:08,  4.21s/it]Training until validation scores don't improve for 100 rounds
+[100]	valid_0's binary_logloss: 0.0556718	valid_1's binary_logloss: 0.0569935
+[200]	valid_0's binary_logloss: 0.0129158	valid_1's binary_logloss: 0.0116766
+[300]	valid_0's binary_logloss: 0.00710076	valid_1's binary_logloss: 0.00763367
+[400]	valid_0's binary_logloss: 0.00645326	valid_1's binary_logloss: 0.00407331
+[500]	valid_0's binary_logloss: 0.00599386	valid_1's binary_logloss: 0.00551638
+Early stopping, best iteration is:
+[400]	valid_0's binary_logloss: 0.00645326	valid_1's binary_logloss: 0.00407331
+feature_fraction_stage2, val_score: 0.003956:  33%|###3      | 1/3 [00:08<00:08,  4.21s/it]feature_fraction_stage2, val_score: 0.003956:  67%|######6   | 2/3 [00:08<00:04,  4.30s/it][32m[I 2021-01-11 18:18:26,780][0m Trial 38 finished with value: 0.004073311997023036 and parameters: {'feature_fraction': 0.9520000000000001}. Best is trial 37 with value: 0.004008030281345342.[0m
+feature_fraction_stage2, val_score: 0.003956:  67%|######6   | 2/3 [00:08<00:04,  4.30s/it]Training until validation scores don't improve for 100 rounds
+[100]	valid_0's binary_logloss: 0.0562175	valid_1's binary_logloss: 0.0545839
+[200]	valid_0's binary_logloss: 0.0128466	valid_1's binary_logloss: 0.0114269
+[300]	valid_0's binary_logloss: 0.00709843	valid_1's binary_logloss: 0.00754098
+[400]	valid_0's binary_logloss: 0.0063699	valid_1's binary_logloss: 0.00410996
+[500]	valid_0's binary_logloss: 0.00605748	valid_1's binary_logloss: 0.00556092
+Early stopping, best iteration is:
+[400]	valid_0's binary_logloss: 0.0063699	valid_1's binary_logloss: 0.00410996
+feature_fraction_stage2, val_score: 0.003956:  67%|######6   | 2/3 [00:12<00:04,  4.30s/it]feature_fraction_stage2, val_score: 0.003956: 100%|##########| 3/3 [00:12<00:00,  4.26s/it][32m[I 2021-01-11 18:18:31,000][0m Trial 39 finished with value: 0.004109957298299281 and parameters: {'feature_fraction': 0.9840000000000001}. Best is trial 37 with value: 0.004008030281345342.[0m
+feature_fraction_stage2, val_score: 0.003956: 100%|##########| 3/3 [00:12<00:00,  4.26s/it]
+  0%|          | 0/20 [00:00<?, ?it/s]regularization_factors, val_score: 0.003956:   0%|          | 0/20 [00:00<?, ?it/s]Training until validation scores don't improve for 100 rounds
+[100]	valid_0's binary_logloss: 0.0561937	valid_1's binary_logloss: 0.0557592
+[200]	valid_0's binary_logloss: 0.0129059	valid_1's binary_logloss: 0.0116543
+[300]	valid_0's binary_logloss: 0.00709186	valid_1's binary_logloss: 0.0075531
+[400]	valid_0's binary_logloss: 0.0064238	valid_1's binary_logloss: 0.00404981
+[500]	valid_0's binary_logloss: 0.00602644	valid_1's binary_logloss: 0.00556341
+Early stopping, best iteration is:
+[400]	valid_0's binary_logloss: 0.0064238	valid_1's binary_logloss: 0.00404981
+regularization_factors, val_score: 0.003956:   0%|          | 0/20 [00:05<?, ?it/s]regularization_factors, val_score: 0.003956:   5%|5         | 1/20 [00:05<01:41,  5.34s/it][32m[I 2021-01-11 18:18:36,347][0m Trial 40 finished with value: 0.004049807715265535 and parameters: {'lambda_l1': 4.0221708266571e-06, 'lambda_l2': 1.1386778195402432e-07}. Best is trial 40 with value: 0.004049807715265535.[0m
+regularization_factors, val_score: 0.003956:   5%|5         | 1/20 [00:05<01:41,  5.34s/it]Training until validation scores don't improve for 100 rounds
+[100]	valid_0's binary_logloss: 0.0568746	valid_1's binary_logloss: 0.0573816
+[200]	valid_0's binary_logloss: 0.0129239	valid_1's binary_logloss: 0.0115412
+[300]	valid_0's binary_logloss: 0.00704863	valid_1's binary_logloss: 0.00745682
+[400]	valid_0's binary_logloss: 0.00640392	valid_1's binary_logloss: 0.00411029
+[500]	valid_0's binary_logloss: 0.00595231	valid_1's binary_logloss: 0.00520138
+Early stopping, best iteration is:
+[400]	valid_0's binary_logloss: 0.00640392	valid_1's binary_logloss: 0.00411029
+regularization_factors, val_score: 0.003956:   5%|5         | 1/20 [00:10<01:41,  5.34s/it]regularization_factors, val_score: 0.003956:  10%|#         | 2/20 [00:10<01:30,  5.04s/it][32m[I 2021-01-11 18:18:41,179][0m Trial 41 finished with value: 0.004110285286715849 and parameters: {'lambda_l1': 3.0100546376351988e-06, 'lambda_l2': 2.245577678296142e-08}. Best is trial 40 with value: 0.004049807715265535.[0m
+regularization_factors, val_score: 0.003956:  10%|#         | 2/20 [00:10<01:30,  5.04s/it]Training until validation scores don't improve for 100 rounds
+[100]	valid_0's binary_logloss: 0.0634152	valid_1's binary_logloss: 0.0646364
+[200]	valid_0's binary_logloss: 0.0184587	valid_1's binary_logloss: 0.0176411
+[300]	valid_0's binary_logloss: 0.011089	valid_1's binary_logloss: 0.0114961
+[400]	valid_0's binary_logloss: 0.0092175	valid_1's binary_logloss: 0.00709382
+[500]	valid_0's binary_logloss: 0.00819279	valid_1's binary_logloss: 0.00807599
+Early stopping, best iteration is:
+[400]	valid_0's binary_logloss: 0.0092175	valid_1's binary_logloss: 0.00709382
+regularization_factors, val_score: 0.003956:  10%|#         | 2/20 [00:13<01:30,  5.04s/it]regularization_factors, val_score: 0.003956:  15%|#5        | 3/20 [00:13<01:11,  4.21s/it][32m[I 2021-01-11 18:18:44,408][0m Trial 42 finished with value: 0.00709381533697939 and parameters: {'lambda_l1': 0.13490383349212534, 'lambda_l2': 4.696049553697879e-06}. Best is trial 40 with value: 0.004049807715265535.[0m
+regularization_factors, val_score: 0.003956:  15%|#5        | 3/20 [00:13<01:11,  4.21s/it]Training until validation scores don't improve for 100 rounds
+[100]	valid_0's binary_logloss: 0.169428	valid_1's binary_logloss: 0.168228
+[200]	valid_0's binary_logloss: 0.0802144	valid_1's binary_logloss: 0.0793702
+[300]	valid_0's binary_logloss: 0.0477619	valid_1's binary_logloss: 0.047749
+[400]	valid_0's binary_logloss: 0.0324972	valid_1's binary_logloss: 0.0317891
+[500]	valid_0's binary_logloss: 0.0242072	valid_1's binary_logloss: 0.0242852
+[600]	valid_0's binary_logloss: 0.0194553	valid_1's binary_logloss: 0.0190049
+[700]	valid_0's binary_logloss: 0.0163486	valid_1's binary_logloss: 0.0167895
+[800]	valid_0's binary_logloss: 0.0142521	valid_1's binary_logloss: 0.0141559
+[900]	valid_0's binary_logloss: 0.0126579	valid_1's binary_logloss: 0.0130341
+[1000]	valid_0's binary_logloss: 0.0116467	valid_1's binary_logloss: 0.0118625
+Did not meet early stopping. Best iteration is:
+[1000]	valid_0's binary_logloss: 0.0116467	valid_1's binary_logloss: 0.0118625
+regularization_factors, val_score: 0.003956:  15%|#5        | 3/20 [00:26<01:11,  4.21s/it]regularization_factors, val_score: 0.003956:  20%|##        | 4/20 [00:26<02:03,  7.73s/it][32m[I 2021-01-11 18:18:57,522][0m Trial 43 finished with value: 0.011862529746700837 and parameters: {'lambda_l1': 3.948781470367648e-08, 'lambda_l2': 7.533448814732989}. Best is trial 40 with value: 0.004049807715265535.[0m
+regularization_factors, val_score: 0.003956:  20%|##        | 4/20 [00:26<02:03,  7.73s/it]Training until validation scores don't improve for 100 rounds
+[100]	valid_0's binary_logloss: 0.056064	valid_1's binary_logloss: 0.0557149
+[200]	valid_0's binary_logloss: 0.0130035	valid_1's binary_logloss: 0.0118549
+[300]	valid_0's binary_logloss: 0.00709407	valid_1's binary_logloss: 0.00763185
+[400]	valid_0's binary_logloss: 0.00641587	valid_1's binary_logloss: 0.00409437
+[500]	valid_0's binary_logloss: 0.00599656	valid_1's binary_logloss: 0.00564254
+Early stopping, best iteration is:
+[400]	valid_0's binary_logloss: 0.00641587	valid_1's binary_logloss: 0.00409437
+regularization_factors, val_score: 0.003956:  20%|##        | 4/20 [00:31<02:03,  7.73s/it]regularization_factors, val_score: 0.003956:  25%|##5       | 5/20 [00:31<01:42,  6.87s/it][32m[I 2021-01-11 18:19:02,859][0m Trial 44 finished with value: 0.004094370995106491 and parameters: {'lambda_l1': 0.0008723919938506175, 'lambda_l2': 1.1865615819376656e-08}. Best is trial 40 with value: 0.004049807715265535.[0m
+regularization_factors, val_score: 0.003956:  25%|##5       | 5/20 [00:31<01:42,  6.87s/it]Training until validation scores don't improve for 100 rounds
+[100]	valid_0's binary_logloss: 0.0567705	valid_1's binary_logloss: 0.0578017
+[200]	valid_0's binary_logloss: 0.0129856	valid_1's binary_logloss: 0.0116847
+[300]	valid_0's binary_logloss: 0.0071366	valid_1's binary_logloss: 0.00754206
+[400]	valid_0's binary_logloss: 0.00641617	valid_1's binary_logloss: 0.00411328
+[500]	valid_0's binary_logloss: 0.0060424	valid_1's binary_logloss: 0.00572098
+Early stopping, best iteration is:
+[400]	valid_0's binary_logloss: 0.00641617	valid_1's binary_logloss: 0.00411328
+regularization_factors, val_score: 0.003956:  25%|##5       | 5/20 [00:36<01:42,  6.87s/it]regularization_factors, val_score: 0.003956:  30%|###       | 6/20 [00:36<01:26,  6.18s/it][32m[I 2021-01-11 18:19:07,711][0m Trial 45 finished with value: 0.004113277907206064 and parameters: {'lambda_l1': 0.0008461786378341351, 'lambda_l2': 1.1182843108975197e-08}. Best is trial 40 with value: 0.004049807715265535.[0m
+regularization_factors, val_score: 0.003956:  30%|###       | 6/20 [00:36<01:26,  6.18s/it]Training until validation scores don't improve for 100 rounds
+[100]	valid_0's binary_logloss: 0.0571511	valid_1's binary_logloss: 0.057043
+[200]	valid_0's binary_logloss: 0.0131849	valid_1's binary_logloss: 0.0114718
+[300]	valid_0's binary_logloss: 0.00712043	valid_1's binary_logloss: 0.00746189
+[400]	valid_0's binary_logloss: 0.00641639	valid_1's binary_logloss: 0.00417007
+[500]	valid_0's binary_logloss: 0.00597769	valid_1's binary_logloss: 0.00546378
+Early stopping, best iteration is:
+[400]	valid_0's binary_logloss: 0.00641639	valid_1's binary_logloss: 0.00417007
+regularization_factors, val_score: 0.003956:  30%|###       | 6/20 [00:42<01:26,  6.18s/it]regularization_factors, val_score: 0.003956:  35%|###5      | 7/20 [00:42<01:18,  6.06s/it][32m[I 2021-01-11 18:19:13,508][0m Trial 46 finished with value: 0.004170068740886922 and parameters: {'lambda_l1': 0.00020610414047670354, 'lambda_l2': 2.8176164895541844e-06}. Best is trial 40 with value: 0.004049807715265535.[0m
+regularization_factors, val_score: 0.003956:  35%|###5      | 7/20 [00:42<01:18,  6.06s/it]Training until validation scores don't improve for 100 rounds
+[100]	valid_0's binary_logloss: 0.0571493	valid_1's binary_logloss: 0.0575411
+[200]	valid_0's binary_logloss: 0.0130016	valid_1's binary_logloss: 0.0117711
+[300]	valid_0's binary_logloss: 0.00706668	valid_1's binary_logloss: 0.00754099
+[400]	valid_0's binary_logloss: 0.00638684	valid_1's binary_logloss: 0.00402334
+[500]	valid_0's binary_logloss: 0.00600865	valid_1's binary_logloss: 0.0055996
+Early stopping, best iteration is:
+[400]	valid_0's binary_logloss: 0.00638684	valid_1's binary_logloss: 0.00402334
+regularization_factors, val_score: 0.003956:  35%|###5      | 7/20 [00:47<01:18,  6.06s/it]regularization_factors, val_score: 0.003956:  40%|####      | 8/20 [00:47<01:07,  5.59s/it][32m[I 2021-01-11 18:19:18,096][0m Trial 47 finished with value: 0.004023338597688913 and parameters: {'lambda_l1': 5.988827683713975e-05, 'lambda_l2': 1.212275137272075e-08}. Best is trial 47 with value: 0.004023338597688913.[0m
+regularization_factors, val_score: 0.003956:  40%|####      | 8/20 [00:47<01:07,  5.59s/it]Training until validation scores don't improve for 100 rounds
+[100]	valid_0's binary_logloss: 0.056284	valid_1's binary_logloss: 0.055722
+[200]	valid_0's binary_logloss: 0.0130709	valid_1's binary_logloss: 0.0117296
+[300]	valid_0's binary_logloss: 0.00723478	valid_1's binary_logloss: 0.00762529
+[400]	valid_0's binary_logloss: 0.00647766	valid_1's binary_logloss: 0.00427841
+[500]	valid_0's binary_logloss: 0.00608944	valid_1's binary_logloss: 0.00557762
+Early stopping, best iteration is:
+[400]	valid_0's binary_logloss: 0.00647766	valid_1's binary_logloss: 0.00427841
+regularization_factors, val_score: 0.003956:  40%|####      | 8/20 [00:51<01:07,  5.59s/it]regularization_factors, val_score: 0.003956:  45%|####5     | 9/20 [00:51<00:56,  5.13s/it][32m[I 2021-01-11 18:19:22,223][0m Trial 48 finished with value: 0.004278408465359351 and parameters: {'lambda_l1': 5.137928166326144e-07, 'lambda_l2': 0.005524035597864938}. Best is trial 47 with value: 0.004023338597688913.[0m
+regularization_factors, val_score: 0.003956:  45%|####5     | 9/20 [00:51<00:56,  5.13s/it]Training until validation scores don't improve for 100 rounds
+[100]	valid_0's binary_logloss: 0.055749	valid_1's binary_logloss: 0.0543061
+[200]	valid_0's binary_logloss: 0.0128809	valid_1's binary_logloss: 0.0115
+[300]	valid_0's binary_logloss: 0.00704782	valid_1's binary_logloss: 0.00752378
+[400]	valid_0's binary_logloss: 0.00643962	valid_1's binary_logloss: 0.00409925
+[500]	valid_0's binary_logloss: 0.00603136	valid_1's binary_logloss: 0.00539714
+Early stopping, best iteration is:
+[400]	valid_0's binary_logloss: 0.00643962	valid_1's binary_logloss: 0.00409925
+regularization_factors, val_score: 0.003956:  45%|####5     | 9/20 [00:55<00:56,  5.13s/it]regularization_factors, val_score: 0.003956:  50%|#####     | 10/20 [00:55<00:49,  4.90s/it][32m[I 2021-01-11 18:19:26,610][0m Trial 49 finished with value: 0.004099251240070325 and parameters: {'lambda_l1': 2.617727087400963e-05, 'lambda_l2': 9.836182890871768e-07}. Best is trial 47 with value: 0.004023338597688913.[0m
+regularization_factors, val_score: 0.003956:  50%|#####     | 10/20 [00:55<00:49,  4.90s/it]Training until validation scores don't improve for 100 rounds
+[100]	valid_0's binary_logloss: 0.060189	valid_1's binary_logloss: 0.0613183
+[200]	valid_0's binary_logloss: 0.0159148	valid_1's binary_logloss: 0.0149463
+[300]	valid_0's binary_logloss: 0.0093036	valid_1's binary_logloss: 0.00964383
+[400]	valid_0's binary_logloss: 0.00794955	valid_1's binary_logloss: 0.0057782
+[500]	valid_0's binary_logloss: 0.00720226	valid_1's binary_logloss: 0.00709011
+Early stopping, best iteration is:
+[400]	valid_0's binary_logloss: 0.00794955	valid_1's binary_logloss: 0.0057782
+regularization_factors, val_score: 0.003956:  50%|#####     | 10/20 [00:59<00:49,  4.90s/it]regularization_factors, val_score: 0.003956:  55%|#####5    | 11/20 [00:59<00:42,  4.72s/it][32m[I 2021-01-11 18:19:30,914][0m Trial 50 finished with value: 0.00577820082878784 and parameters: {'lambda_l1': 0.06488126769577014, 'lambda_l2': 0.0005815795394623933}. Best is trial 47 with value: 0.004023338597688913.[0m
+regularization_factors, val_score: 0.003956:  55%|#####5    | 11/20 [00:59<00:42,  4.72s/it]Training until validation scores don't improve for 100 rounds
+[100]	valid_0's binary_logloss: 0.0562042	valid_1's binary_logloss: 0.0552091
+[200]	valid_0's binary_logloss: 0.0130685	valid_1's binary_logloss: 0.0113551
+[300]	valid_0's binary_logloss: 0.00721207	valid_1's binary_logloss: 0.00755488
+[400]	valid_0's binary_logloss: 0.00651592	valid_1's binary_logloss: 0.00411561
+[500]	valid_0's binary_logloss: 0.00608464	valid_1's binary_logloss: 0.00561509
+Early stopping, best iteration is:
+[400]	valid_0's binary_logloss: 0.00651592	valid_1's binary_logloss: 0.00411561
+regularization_factors, val_score: 0.003956:  55%|#####5    | 11/20 [01:04<00:42,  4.72s/it]regularization_factors, val_score: 0.003956:  60%|######    | 12/20 [01:04<00:37,  4.65s/it][32m[I 2021-01-11 18:19:35,392][0m Trial 51 finished with value: 0.0041156062374330905 and parameters: {'lambda_l1': 0.001993410332458461, 'lambda_l2': 1.0808515239359909e-08}. Best is trial 47 with value: 0.004023338597688913.[0m
+regularization_factors, val_score: 0.003956:  60%|######    | 12/20 [01:04<00:37,  4.65s/it]Training until validation scores don't improve for 100 rounds
+[100]	valid_0's binary_logloss: 0.0568999	valid_1's binary_logloss: 0.057253
+[200]	valid_0's binary_logloss: 0.0129854	valid_1's binary_logloss: 0.0116318
+[300]	valid_0's binary_logloss: 0.00711123	valid_1's binary_logloss: 0.00779301
+[400]	valid_0's binary_logloss: 0.00642804	valid_1's binary_logloss: 0.00407743
+[500]	valid_0's binary_logloss: 0.00594803	valid_1's binary_logloss: 0.0052127
+Early stopping, best iteration is:
+[400]	valid_0's binary_logloss: 0.00642804	valid_1's binary_logloss: 0.00407743
+regularization_factors, val_score: 0.003956:  60%|######    | 12/20 [01:08<00:37,  4.65s/it]regularization_factors, val_score: 0.003956:  65%|######5   | 13/20 [01:08<00:32,  4.61s/it][32m[I 2021-01-11 18:19:39,907][0m Trial 52 finished with value: 0.004077434057708041 and parameters: {'lambda_l1': 1.2406196929426384e-05, 'lambda_l2': 1.552432790517556e-07}. Best is trial 47 with value: 0.004023338597688913.[0m
+regularization_factors, val_score: 0.003956:  65%|######5   | 13/20 [01:08<00:32,  4.61s/it]Training until validation scores don't improve for 100 rounds
+[100]	valid_0's binary_logloss: 0.056281	valid_1's binary_logloss: 0.055852
+[200]	valid_0's binary_logloss: 0.0128531	valid_1's binary_logloss: 0.0113402
+[300]	valid_0's binary_logloss: 0.00701289	valid_1's binary_logloss: 0.00742498
+[400]	valid_0's binary_logloss: 0.00638918	valid_1's binary_logloss: 0.00406105
+[500]	valid_0's binary_logloss: 0.0060243	valid_1's binary_logloss: 0.00567305
+Early stopping, best iteration is:
+[400]	valid_0's binary_logloss: 0.00638918	valid_1's binary_logloss: 0.00406105
+regularization_factors, val_score: 0.003956:  65%|######5   | 13/20 [01:13<00:32,  4.61s/it]regularization_factors, val_score: 0.003956:  70%|#######   | 14/20 [01:13<00:27,  4.56s/it][32m[I 2021-01-11 18:19:44,347][0m Trial 53 finished with value: 0.0040610452958588774 and parameters: {'lambda_l1': 5.783148967933355e-06, 'lambda_l2': 3.265304290599164e-07}. Best is trial 47 with value: 0.004023338597688913.[0m
+regularization_factors, val_score: 0.003956:  70%|#######   | 14/20 [01:13<00:27,  4.56s/it]Training until validation scores don't improve for 100 rounds
+[100]	valid_0's binary_logloss: 0.05689	valid_1's binary_logloss: 0.0578023
+[200]	valid_0's binary_logloss: 0.0129021	valid_1's binary_logloss: 0.0114033
+[300]	valid_0's binary_logloss: 0.00709452	valid_1's binary_logloss: 0.00753361
+[400]	valid_0's binary_logloss: 0.00638288	valid_1's binary_logloss: 0.00416695
+[500]	valid_0's binary_logloss: 0.00594288	valid_1's binary_logloss: 0.00533124
+Early stopping, best iteration is:
+[400]	valid_0's binary_logloss: 0.00638288	valid_1's binary_logloss: 0.00416695
+regularization_factors, val_score: 0.003956:  70%|#######   | 14/20 [01:21<00:27,  4.56s/it]regularization_factors, val_score: 0.003956:  75%|#######5  | 15/20 [01:21<00:28,  5.61s/it][32m[I 2021-01-11 18:19:52,404][0m Trial 54 finished with value: 0.004166952447868159 and parameters: {'lambda_l1': 4.345035591456732e-08, 'lambda_l2': 5.123224295789584e-05}. Best is trial 47 with value: 0.004023338597688913.[0m
+regularization_factors, val_score: 0.003956:  75%|#######5  | 15/20 [01:21<00:28,  5.61s/it]Training until validation scores don't improve for 100 rounds
+[100]	valid_0's binary_logloss: 0.055749	valid_1's binary_logloss: 0.0566264
+[200]	valid_0's binary_logloss: 0.0129011	valid_1's binary_logloss: 0.0114155
+[300]	valid_0's binary_logloss: 0.00707708	valid_1's binary_logloss: 0.00750639
+[400]	valid_0's binary_logloss: 0.00638298	valid_1's binary_logloss: 0.00406013
+[500]	valid_0's binary_logloss: 0.00602101	valid_1's binary_logloss: 0.00555083
+Early stopping, best iteration is:
+[400]	valid_0's binary_logloss: 0.00638298	valid_1's binary_logloss: 0.00406013
+regularization_factors, val_score: 0.003956:  75%|#######5  | 15/20 [01:26<00:28,  5.61s/it]regularization_factors, val_score: 0.003956:  80%|########  | 16/20 [01:26<00:21,  5.40s/it][32m[I 2021-01-11 18:19:57,302][0m Trial 55 finished with value: 0.0040601255392917176 and parameters: {'lambda_l1': 4.912545662858768e-07, 'lambda_l2': 2.739540867943054e-07}. Best is trial 47 with value: 0.004023338597688913.[0m
+regularization_factors, val_score: 0.003956:  80%|########  | 16/20 [01:26<00:21,  5.40s/it]Training until validation scores don't improve for 100 rounds
+[100]	valid_0's binary_logloss: 0.0557252	valid_1's binary_logloss: 0.0556526
+[200]	valid_0's binary_logloss: 0.0129041	valid_1's binary_logloss: 0.0116728
+[300]	valid_0's binary_logloss: 0.00706276	valid_1's binary_logloss: 0.0073756
+[400]	valid_0's binary_logloss: 0.00641826	valid_1's binary_logloss: 0.0040572
+[500]	valid_0's binary_logloss: 0.00598761	valid_1's binary_logloss: 0.00552295
+Early stopping, best iteration is:
+[400]	valid_0's binary_logloss: 0.00641826	valid_1's binary_logloss: 0.0040572
+regularization_factors, val_score: 0.003956:  80%|########  | 16/20 [01:31<00:21,  5.40s/it]regularization_factors, val_score: 0.003956:  85%|########5 | 17/20 [01:31<00:15,  5.22s/it][32m[I 2021-01-11 18:20:02,099][0m Trial 56 finished with value: 0.004057197801244025 and parameters: {'lambda_l1': 7.125425881822441e-07, 'lambda_l2': 1.8109203495585173e-07}. Best is trial 47 with value: 0.004023338597688913.[0m
+regularization_factors, val_score: 0.003956:  85%|########5 | 17/20 [01:31<00:15,  5.22s/it]Training until validation scores don't improve for 100 rounds
+[100]	valid_0's binary_logloss: 0.0565457	valid_1's binary_logloss: 0.0560408
+[200]	valid_0's binary_logloss: 0.0129361	valid_1's binary_logloss: 0.0116841
+[300]	valid_0's binary_logloss: 0.00708034	valid_1's binary_logloss: 0.00764538
+[400]	valid_0's binary_logloss: 0.0064185	valid_1's binary_logloss: 0.00406618
+[500]	valid_0's binary_logloss: 0.00595734	valid_1's binary_logloss: 0.00530313
+Early stopping, best iteration is:
+[400]	valid_0's binary_logloss: 0.0064185	valid_1's binary_logloss: 0.00406618
+regularization_factors, val_score: 0.003956:  85%|########5 | 17/20 [01:35<00:15,  5.22s/it]regularization_factors, val_score: 0.003956:  90%|######### | 18/20 [01:35<00:10,  5.04s/it][32m[I 2021-01-11 18:20:06,723][0m Trial 57 finished with value: 0.0040661764990291074 and parameters: {'lambda_l1': 3.973808784900541e-07, 'lambda_l2': 6.810368408727316e-08}. Best is trial 47 with value: 0.004023338597688913.[0m
+regularization_factors, val_score: 0.003956:  90%|######### | 18/20 [01:35<00:10,  5.04s/it]Training until validation scores don't improve for 100 rounds
+[100]	valid_0's binary_logloss: 0.0553876	valid_1's binary_logloss: 0.0550393
+[200]	valid_0's binary_logloss: 0.0127893	valid_1's binary_logloss: 0.0119133
+[300]	valid_0's binary_logloss: 0.007059	valid_1's binary_logloss: 0.00745788
+[400]	valid_0's binary_logloss: 0.00641633	valid_1's binary_logloss: 0.0040857
+[500]	valid_0's binary_logloss: 0.00604	valid_1's binary_logloss: 0.00575118
+Early stopping, best iteration is:
+[400]	valid_0's binary_logloss: 0.00641633	valid_1's binary_logloss: 0.0040857
+regularization_factors, val_score: 0.003956:  90%|######### | 18/20 [01:40<00:10,  5.04s/it]regularization_factors, val_score: 0.003956:  95%|#########5| 19/20 [01:40<00:04,  4.88s/it][32m[I 2021-01-11 18:20:11,244][0m Trial 58 finished with value: 0.00408570103769275 and parameters: {'lambda_l1': 4.581798396264908e-07, 'lambda_l2': 1.9527607569734803e-07}. Best is trial 47 with value: 0.004023338597688913.[0m
+regularization_factors, val_score: 0.003956:  95%|#########5| 19/20 [01:40<00:04,  4.88s/it]Training until validation scores don't improve for 100 rounds
+[100]	valid_0's binary_logloss: 0.05547	valid_1's binary_logloss: 0.0557498
+[200]	valid_0's binary_logloss: 0.0126138	valid_1's binary_logloss: 0.0117428
+[300]	valid_0's binary_logloss: 0.00706131	valid_1's binary_logloss: 0.00766596
+[400]	valid_0's binary_logloss: 0.00645271	valid_1's binary_logloss: 0.00400365
+[500]	valid_0's binary_logloss: 0.00603302	valid_1's binary_logloss: 0.00530488
+Early stopping, best iteration is:
+[400]	valid_0's binary_logloss: 0.00645271	valid_1's binary_logloss: 0.00400365
+regularization_factors, val_score: 0.003956:  95%|#########5| 19/20 [01:45<00:04,  4.88s/it]regularization_factors, val_score: 0.003956: 100%|##########| 20/20 [01:45<00:00,  4.91s/it][32m[I 2021-01-11 18:20:16,219][0m Trial 59 finished with value: 0.004003645356276394 and parameters: {'lambda_l1': 6.1510359923084e-05, 'lambda_l2': 8.213426689843915e-06}. Best is trial 59 with value: 0.004003645356276394.[0m
+regularization_factors, val_score: 0.003956: 100%|##########| 20/20 [01:45<00:00,  5.26s/it]
+  0%|          | 0/5 [00:00<?, ?it/s]min_data_in_leaf, val_score: 0.003956:   0%|          | 0/5 [00:00<?, ?it/s]Training until validation scores don't improve for 100 rounds
+[100]	valid_0's binary_logloss: 0.0199884	valid_1's binary_logloss: 0.0202963
+[200]	valid_0's binary_logloss: 0.00702527	valid_1's binary_logloss: 0.00554696
+[300]	valid_0's binary_logloss: 12.7874	valid_1's binary_logloss: 12.632
+Early stopping, best iteration is:
+[211]	valid_0's binary_logloss: 0.00681775	valid_1's binary_logloss: 0.00545442
+min_data_in_leaf, val_score: 0.003956:   0%|          | 0/5 [00:04<?, ?it/s]min_data_in_leaf, val_score: 0.003956:  20%|##        | 1/5 [00:04<00:19,  4.84s/it][32m[I 2021-01-11 18:20:21,069][0m Trial 60 finished with value: 0.005454416290035374 and parameters: {'min_child_samples': 5}. Best is trial 60 with value: 0.005454416290035374.[0m
+min_data_in_leaf, val_score: 0.003956:  20%|##        | 1/5 [00:04<00:19,  4.84s/it]Training until validation scores don't improve for 100 rounds
+[100]	valid_0's binary_logloss: 0.0288514	valid_1's binary_logloss: 0.0297859
+[200]	valid_0's binary_logloss: 0.0078967	valid_1's binary_logloss: 0.00644898
+[300]	valid_0's binary_logloss: 0.00614981	valid_1's binary_logloss: 0.00663663
+[400]	valid_0's binary_logloss: 0.00625443	valid_1's binary_logloss: 0.00386655
+Early stopping, best iteration is:
+[337]	valid_0's binary_logloss: 0.00585215	valid_1's binary_logloss: 0.00620729
+min_data_in_leaf, val_score: 0.003956:  20%|##        | 1/5 [00:10<00:19,  4.84s/it]min_data_in_leaf, val_score: 0.003956:  40%|####      | 2/5 [00:10<00:16,  5.34s/it][32m[I 2021-01-11 18:20:26,753][0m Trial 61 finished with value: 0.006207289622046906 and parameters: {'min_child_samples': 10}. Best is trial 60 with value: 0.005454416290035374.[0m
+min_data_in_leaf, val_score: 0.003956:  40%|####      | 2/5 [00:10<00:16,  5.34s/it]Training until validation scores don't improve for 100 rounds
+[100]	valid_0's binary_logloss: 0.254383	valid_1's binary_logloss: 0.256392
+[200]	valid_0's binary_logloss: 0.142229	valid_1's binary_logloss: 0.14184
+[300]	valid_0's binary_logloss: 0.082892	valid_1's binary_logloss: 0.0838643
+[400]	valid_0's binary_logloss: 0.0508354	valid_1's binary_logloss: 0.0499737
+[500]	valid_0's binary_logloss: 0.0323865	valid_1's binary_logloss: 0.0324221
+[600]	valid_0's binary_logloss: 0.0221179	valid_1's binary_logloss: 0.0216195
+[700]	valid_0's binary_logloss: 0.0159493	valid_1's binary_logloss: 0.016617
+[800]	valid_0's binary_logloss: 0.0124687	valid_1's binary_logloss: 0.0122454
+[900]	valid_0's binary_logloss: 0.0102914	valid_1's binary_logloss: 0.0113045
+[1000]	valid_0's binary_logloss: 0.00929987	valid_1's binary_logloss: 0.00817941
+Did not meet early stopping. Best iteration is:
+[985]	valid_0's binary_logloss: 0.00898196	valid_1's binary_logloss: 0.00929375
+min_data_in_leaf, val_score: 0.003956:  40%|####      | 2/5 [00:13<00:16,  5.34s/it]min_data_in_leaf, val_score: 0.003956:  60%|######    | 3/5 [00:13<00:08,  4.46s/it][32m[I 2021-01-11 18:20:30,176][0m Trial 62 finished with value: 0.009293745091075473 and parameters: {'min_child_samples': 100}. Best is trial 60 with value: 0.005454416290035374.[0m
+min_data_in_leaf, val_score: 0.003956:  60%|######    | 3/5 [00:13<00:08,  4.46s/it]Training until validation scores don't improve for 100 rounds
+[100]	valid_0's binary_logloss: 0.0715933	valid_1's binary_logloss: 0.0716408
+[200]	valid_0's binary_logloss: 0.01709	valid_1's binary_logloss: 0.0158523
+[300]	valid_0's binary_logloss: 0.00821054	valid_1's binary_logloss: 0.00864935
+[400]	valid_0's binary_logloss: 0.00665441	valid_1's binary_logloss: 0.00439627
+[500]	valid_0's binary_logloss: 0.00610722	valid_1's binary_logloss: 0.00575001
+Early stopping, best iteration is:
+[400]	valid_0's binary_logloss: 0.00665441	valid_1's binary_logloss: 0.00439627
+min_data_in_leaf, val_score: 0.003956:  60%|######    | 3/5 [00:17<00:08,  4.46s/it]min_data_in_leaf, val_score: 0.003956:  80%|########  | 4/5 [00:17<00:04,  4.16s/it][32m[I 2021-01-11 18:20:33,878][0m Trial 63 finished with value: 0.004396265459236126 and parameters: {'min_child_samples': 25}. Best is trial 63 with value: 0.004396265459236126.[0m
+min_data_in_leaf, val_score: 0.003956:  80%|########  | 4/5 [00:17<00:04,  4.16s/it]Training until validation scores don't improve for 100 rounds
+[100]	valid_0's binary_logloss: 0.150483	valid_1's binary_logloss: 0.150942
+[200]	valid_0's binary_logloss: 0.0524676	valid_1's binary_logloss: 0.0523851
+[300]	valid_0's binary_logloss: 0.022604	valid_1's binary_logloss: 0.0233777
+[400]	valid_0's binary_logloss: 0.0124975	valid_1's binary_logloss: 0.0101664
+[500]	valid_0's binary_logloss: 0.00844711	valid_1's binary_logloss: 0.00803851
+[600]	valid_0's binary_logloss: 0.00739477	valid_1's binary_logloss: 0.0065263
+[700]	valid_0's binary_logloss: 0.00679723	valid_1's binary_logloss: 0.0079551
+Early stopping, best iteration is:
+[608]	valid_0's binary_logloss: 0.00699232	valid_1's binary_logloss: 0.00583791
+min_data_in_leaf, val_score: 0.003956:  80%|########  | 4/5 [00:20<00:04,  4.16s/it]min_data_in_leaf, val_score: 0.003956: 100%|##########| 5/5 [00:20<00:00,  3.85s/it][32m[I 2021-01-11 18:20:37,185][0m Trial 64 finished with value: 0.005837906978651142 and parameters: {'min_child_samples': 50}. Best is trial 63 with value: 0.004396265459236126.[0m
+min_data_in_leaf, val_score: 0.003956: 100%|##########| 5/5 [00:20<00:00,  4.19s/it]
+Best params: {'objective': 'binary', 'metric': 'binary_logloss', 'verbosity': -1, 'boosting_type': 'gbdt', 'feature_pre_filter': False, 'lambda_l1': 0.0, 'lambda_l2': 0.0, 'num_leaves': 256, 'feature_fraction': 1.0, 'bagging_fraction': 0.452599666040136, 'bagging_freq': 4, 'min_child_samples': 20, 'num_iterations': 1000, 'early_stopping_round': 100}
+  Accuracy = 0.9989495798319328
+  Params: 
+    objective: binary
+    metric: binary_logloss
+    verbosity: -1
+    boosting_type: gbdt
+    feature_pre_filter: False
+    lambda_l1: 0.0
+    lambda_l2: 0.0
+    num_leaves: 256
+    feature_fraction: 1.0
+    bagging_fraction: 0.452599666040136
+    bagging_freq: 4
+    min_child_samples: 20
+    num_iterations: 1000
+    early_stopping_round: 100
+[32m[I 2021-01-11 18:41:01,761][0m A new study created in memory with name: no-name-115aaad8-88c7-4175-b22c-23ee35b36cf5[0m
+  0%|          | 0/7 [00:00<?, ?it/s]feature_fraction, val_score: inf:   0%|          | 0/7 [00:00<?, ?it/s][33m[W 2021-01-11 18:41:02,172][0m Trial 0 failed because of the following error: ValueError('For early stopping, at least one dataset and eval metric is required for evaluation',)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/optuna/_optimize.py", line 189, in _run_trial
+    value = func(trial)
+  File "/usr/local/lib/python3.6/dist-packages/optuna/integration/_lightgbm_tuner/optimize.py", line 318, in __call__
+    cv_results = lgb.cv(self.lgbm_params, train_set, **self.lgbm_kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/lightgbm/engine.py", line 604, in cv
+    evaluation_result_list=res))
+  File "/usr/local/lib/python3.6/dist-packages/lightgbm/callback.py", line 219, in _callback
+    _init(env)
+  File "/usr/local/lib/python3.6/dist-packages/lightgbm/callback.py", line 189, in _init
+    raise ValueError('For early stopping, '
+ValueError: For early stopping, at least one dataset and eval metric is required for evaluation[0m
+[32m[I 2021-01-11 18:43:01,074][0m A new study created in memory with name: no-name-5a16e21c-0a4f-4d3d-b7f3-029ab53c6bbb[0m
+
+  0%|          | 0/7 [00:00<?, ?it/s][A
+feature_fraction, val_score: inf:   0%|          | 0/7 [00:00<?, ?it/s][A
+feature_fraction, val_score: 0.481282:   0%|          | 0/7 [00:04<?, ?it/s][A
+feature_fraction, val_score: 0.481282:  14%|#4        | 1/7 [00:04<00:26,  4.36s/it][A[32m[I 2021-01-11 18:43:05,447][0m Trial 0 finished with value: 0.4812821920818188 and parameters: {'feature_fraction': 0.8999999999999999}. Best is trial 0 with value: 0.4812821920818188.[0m
+
+feature_fraction, val_score: 0.481282:  14%|#4        | 1/7 [00:04<00:26,  4.36s/it][A
+feature_fraction, val_score: 0.477731:  14%|#4        | 1/7 [00:09<00:26,  4.36s/it][A
+feature_fraction, val_score: 0.477731:  29%|##8       | 2/7 [00:09<00:23,  4.70s/it][A[32m[I 2021-01-11 18:43:10,378][0m Trial 1 finished with value: 0.47773051164263824 and parameters: {'feature_fraction': 0.6}. Best is trial 1 with value: 0.47773051164263824.[0m
+
+feature_fraction, val_score: 0.477731:  29%|##8       | 2/7 [00:09<00:23,  4.70s/it][A
+feature_fraction, val_score: 0.477731:  29%|##8       | 2/7 [00:13<00:23,  4.70s/it][A
+feature_fraction, val_score: 0.477731:  43%|####2     | 3/7 [00:13<00:17,  4.44s/it][A[32m[I 2021-01-11 18:43:14,522][0m Trial 2 finished with value: 0.4805651405777819 and parameters: {'feature_fraction': 0.5}. Best is trial 1 with value: 0.47773051164263824.[0m
+
+feature_fraction, val_score: 0.477731:  43%|####2     | 3/7 [00:13<00:17,  4.44s/it][A
+feature_fraction, val_score: 0.477731:  43%|####2     | 3/7 [00:18<00:17,  4.44s/it][A
+feature_fraction, val_score: 0.477731:  57%|#####7    | 4/7 [00:18<00:14,  4.67s/it][A[32m[I 2021-01-11 18:43:19,536][0m Trial 3 finished with value: 0.4803429533047396 and parameters: {'feature_fraction': 1.0}. Best is trial 1 with value: 0.47773051164263824.[0m
+
+feature_fraction, val_score: 0.477731:  57%|#####7    | 4/7 [00:18<00:14,  4.67s/it][A
+feature_fraction, val_score: 0.477731:  57%|#####7    | 4/7 [00:23<00:14,  4.67s/it][A
+feature_fraction, val_score: 0.477731:  71%|#######1  | 5/7 [00:23<00:09,  4.84s/it][A[32m[I 2021-01-11 18:43:24,679][0m Trial 4 finished with value: 0.47823869012542425 and parameters: {'feature_fraction': 0.8}. Best is trial 1 with value: 0.47773051164263824.[0m
+
+feature_fraction, val_score: 0.477731:  71%|#######1  | 5/7 [00:23<00:09,  4.84s/it][A
+feature_fraction, val_score: 0.477107:  71%|#######1  | 5/7 [00:27<00:09,  4.84s/it][A
+feature_fraction, val_score: 0.477107:  86%|########5 | 6/7 [00:27<00:04,  4.44s/it][A[32m[I 2021-01-11 18:43:28,356][0m Trial 5 finished with value: 0.4771070850969328 and parameters: {'feature_fraction': 0.4}. Best is trial 5 with value: 0.4771070850969328.[0m
+
+feature_fraction, val_score: 0.477107:  86%|########5 | 6/7 [00:27<00:04,  4.44s/it][A
+feature_fraction, val_score: 0.477107:  86%|########5 | 6/7 [00:31<00:04,  4.44s/it][A
+feature_fraction, val_score: 0.477107: 100%|##########| 7/7 [00:31<00:00,  4.32s/it][A[32m[I 2021-01-11 18:43:32,429][0m Trial 6 finished with value: 0.4795467420716621 and parameters: {'feature_fraction': 0.7}. Best is trial 5 with value: 0.4771070850969328.[0m
+feature_fraction, val_score: 0.477107: 100%|##########| 7/7 [00:31<00:00,  4.48s/it]
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+num_leaves, val_score: 0.477107:   0%|          | 0/20 [00:00<?, ?it/s][A
+num_leaves, val_score: 0.477107:   0%|          | 0/20 [00:11<?, ?it/s][A
+num_leaves, val_score: 0.477107:   5%|5         | 1/20 [00:11<03:47, 11.99s/it][A[32m[I 2021-01-11 18:43:44,425][0m Trial 7 finished with value: 0.4942004593980071 and parameters: {'num_leaves': 215}. Best is trial 7 with value: 0.4942004593980071.[0m
+
+num_leaves, val_score: 0.477107:   5%|5         | 1/20 [00:11<03:47, 11.99s/it][A
+num_leaves, val_score: 0.477107:   5%|5         | 1/20 [00:25<03:47, 11.99s/it][A
+num_leaves, val_score: 0.477107:  10%|#         | 2/20 [00:25<03:54, 13.00s/it][A[32m[I 2021-01-11 18:43:58,137][0m Trial 8 finished with value: 0.4885931006746226 and parameters: {'num_leaves': 139}. Best is trial 8 with value: 0.4885931006746226.[0m
+
+num_leaves, val_score: 0.477107:  10%|#         | 2/20 [00:25<03:54, 13.00s/it][A
+num_leaves, val_score: 0.477107:  10%|#         | 2/20 [00:30<03:54, 13.00s/it][A
+num_leaves, val_score: 0.477107:  15%|#5        | 3/20 [00:30<02:35,  9.13s/it][A[32m[I 2021-01-11 18:44:02,661][0m Trial 9 finished with value: 0.4808036485197212 and parameters: {'num_leaves': 33}. Best is trial 9 with value: 0.4808036485197212.[0m
+
+num_leaves, val_score: 0.477107:  15%|#5        | 3/20 [00:30<02:35,  9.13s/it][A
+num_leaves, val_score: 0.477107:  15%|#5        | 3/20 [00:33<02:35,  9.13s/it][A
+num_leaves, val_score: 0.477107:  20%|##        | 4/20 [00:33<01:46,  6.68s/it][A[32m[I 2021-01-11 18:44:05,577][0m Trial 10 finished with value: 0.4818920050181079 and parameters: {'num_leaves': 18}. Best is trial 9 with value: 0.4808036485197212.[0m
+
+num_leaves, val_score: 0.477107:  20%|##        | 4/20 [00:33<01:46,  6.68s/it][A
+num_leaves, val_score: 0.477107:  20%|##        | 4/20 [00:47<01:46,  6.68s/it][A
+num_leaves, val_score: 0.477107:  25%|##5       | 5/20 [00:47<02:21,  9.41s/it][A[32m[I 2021-01-11 18:44:19,823][0m Trial 11 finished with value: 0.4973462293146321 and parameters: {'num_leaves': 256}. Best is trial 9 with value: 0.4808036485197212.[0m
+
+num_leaves, val_score: 0.477107:  25%|##5       | 5/20 [00:47<02:21,  9.41s/it][A
+num_leaves, val_score: 0.477107:  25%|##5       | 5/20 [00:54<02:21,  9.41s/it][A
+num_leaves, val_score: 0.477107:  30%|###       | 6/20 [00:54<02:02,  8.76s/it][A[32m[I 2021-01-11 18:44:27,317][0m Trial 12 finished with value: 0.4888951018751711 and parameters: {'num_leaves': 100}. Best is trial 9 with value: 0.4808036485197212.[0m
+
+num_leaves, val_score: 0.477107:  30%|###       | 6/20 [00:54<02:02,  8.76s/it][A
+num_leaves, val_score: 0.477107:  30%|###       | 6/20 [01:05<02:02,  8.76s/it][A
+num_leaves, val_score: 0.477107:  35%|###5      | 7/20 [01:05<02:00,  9.24s/it][A[32m[I 2021-01-11 18:44:37,567][0m Trial 13 finished with value: 0.4928805444764433 and parameters: {'num_leaves': 175}. Best is trial 9 with value: 0.4808036485197212.[0m
+
+num_leaves, val_score: 0.477107:  35%|###5      | 7/20 [01:05<02:00,  9.24s/it][A
+num_leaves, val_score: 0.477107:  35%|###5      | 7/20 [01:11<02:00,  9.24s/it][A
+num_leaves, val_score: 0.477107:  40%|####      | 8/20 [01:11<01:39,  8.27s/it][A[32m[I 2021-01-11 18:44:43,739][0m Trial 14 finished with value: 0.4855027573999823 and parameters: {'num_leaves': 76}. Best is trial 9 with value: 0.4808036485197212.[0m
+
+num_leaves, val_score: 0.477107:  40%|####      | 8/20 [01:11<01:39,  8.27s/it][A
+num_leaves, val_score: 0.477107:  40%|####      | 8/20 [01:24<01:39,  8.27s/it][A
+num_leaves, val_score: 0.477107:  45%|####5     | 9/20 [01:24<01:47,  9.78s/it][A[32m[I 2021-01-11 18:44:56,851][0m Trial 15 finished with value: 0.4932580581199195 and parameters: {'num_leaves': 241}. Best is trial 9 with value: 0.4808036485197212.[0m
+
+num_leaves, val_score: 0.477107:  45%|####5     | 9/20 [01:24<01:47,  9.78s/it][A
+num_leaves, val_score: 0.477107:  45%|####5     | 9/20 [01:35<01:47,  9.78s/it][A
+num_leaves, val_score: 0.477107:  50%|#####     | 10/20 [01:35<01:40, 10.04s/it][A[32m[I 2021-01-11 18:45:07,481][0m Trial 16 finished with value: 0.4899679401890943 and parameters: {'num_leaves': 174}. Best is trial 9 with value: 0.4808036485197212.[0m
+
+num_leaves, val_score: 0.477107:  50%|#####     | 10/20 [01:35<01:40, 10.04s/it][A
+num_leaves, val_score: 0.477107:  50%|#####     | 10/20 [01:41<01:40, 10.04s/it][A
+num_leaves, val_score: 0.477107:  55%|#####5    | 11/20 [01:41<01:20,  8.99s/it][A[32m[I 2021-01-11 18:45:14,079][0m Trial 17 finished with value: 0.4842184785477507 and parameters: {'num_leaves': 63}. Best is trial 9 with value: 0.4808036485197212.[0m
+
+num_leaves, val_score: 0.477107:  55%|#####5    | 11/20 [01:41<01:20,  8.99s/it][A
+num_leaves, val_score: 0.477107:  55%|#####5    | 11/20 [01:45<01:20,  8.99s/it][A
+num_leaves, val_score: 0.477107:  60%|######    | 12/20 [01:45<01:00,  7.57s/it][A[32m[I 2021-01-11 18:45:18,407][0m Trial 18 finished with value: 0.4773056660896877 and parameters: {'num_leaves': 7}. Best is trial 18 with value: 0.4773056660896877.[0m
+
+num_leaves, val_score: 0.477107:  60%|######    | 12/20 [01:45<01:00,  7.57s/it][A
+num_leaves, val_score: 0.477107:  60%|######    | 12/20 [01:47<01:00,  7.57s/it][A
+num_leaves, val_score: 0.477107:  65%|######5   | 13/20 [01:47<00:41,  5.88s/it][A[32m[I 2021-01-11 18:45:20,393][0m Trial 19 finished with value: 0.47798730313130156 and parameters: {'num_leaves': 6}. Best is trial 18 with value: 0.4773056660896877.[0m
+
+num_leaves, val_score: 0.477107:  65%|######5   | 13/20 [01:47<00:41,  5.88s/it][A
+num_leaves, val_score: 0.477107:  65%|######5   | 13/20 [01:52<00:41,  5.88s/it][A
+num_leaves, val_score: 0.477107:  70%|#######   | 14/20 [01:52<00:32,  5.48s/it][A[32m[I 2021-01-11 18:45:24,943][0m Trial 20 finished with value: 0.4791476251207717 and parameters: {'num_leaves': 47}. Best is trial 18 with value: 0.4773056660896877.[0m
+
+num_leaves, val_score: 0.477107:  70%|#######   | 14/20 [01:52<00:32,  5.48s/it][A
+num_leaves, val_score: 0.477107:  70%|#######   | 14/20 [02:00<00:32,  5.48s/it][A
+num_leaves, val_score: 0.477107:  75%|#######5  | 15/20 [02:00<00:30,  6.09s/it][A[32m[I 2021-01-11 18:45:32,463][0m Trial 21 finished with value: 0.48684923290506427 and parameters: {'num_leaves': 108}. Best is trial 18 with value: 0.4773056660896877.[0m
+
+num_leaves, val_score: 0.477107:  75%|#######5  | 15/20 [02:00<00:30,  6.09s/it][A
+num_leaves, val_score: 0.477107:  75%|#######5  | 15/20 [02:02<00:30,  6.09s/it][A
+num_leaves, val_score: 0.477107:  80%|########  | 16/20 [02:02<00:20,  5.04s/it][A[32m[I 2021-01-11 18:45:35,070][0m Trial 22 finished with value: 0.4804337504030548 and parameters: {'num_leaves': 2}. Best is trial 18 with value: 0.4773056660896877.[0m
+
+num_leaves, val_score: 0.477107:  80%|########  | 16/20 [02:02<00:20,  5.04s/it][A
+num_leaves, val_score: 0.477107:  80%|########  | 16/20 [02:11<00:20,  5.04s/it][A
+num_leaves, val_score: 0.477107:  85%|########5 | 17/20 [02:11<00:18,  6.15s/it][A[32m[I 2021-01-11 18:45:43,793][0m Trial 23 finished with value: 0.49031931770019577 and parameters: {'num_leaves': 134}. Best is trial 18 with value: 0.4773056660896877.[0m
+
+num_leaves, val_score: 0.477107:  85%|########5 | 17/20 [02:11<00:18,  6.15s/it][A
+num_leaves, val_score: 0.477107:  85%|########5 | 17/20 [02:18<00:18,  6.15s/it][A
+num_leaves, val_score: 0.477107:  90%|######### | 18/20 [02:18<00:12,  6.45s/it][A[32m[I 2021-01-11 18:45:50,953][0m Trial 24 finished with value: 0.4856705554824183 and parameters: {'num_leaves': 83}. Best is trial 18 with value: 0.4773056660896877.[0m
+
+num_leaves, val_score: 0.477107:  90%|######### | 18/20 [02:18<00:12,  6.45s/it][A
+num_leaves, val_score: 0.477107:  90%|######### | 18/20 [02:32<00:12,  6.45s/it][A
+num_leaves, val_score: 0.477107:  95%|#########5| 19/20 [02:32<00:08,  8.71s/it][A[32m[I 2021-01-11 18:46:04,912][0m Trial 25 finished with value: 0.49210707074320714 and parameters: {'num_leaves': 172}. Best is trial 18 with value: 0.4773056660896877.[0m
+
+num_leaves, val_score: 0.477107:  95%|#########5| 19/20 [02:32<00:08,  8.71s/it][A
+num_leaves, val_score: 0.477107:  95%|#########5| 19/20 [02:43<00:08,  8.71s/it][A
+num_leaves, val_score: 0.477107: 100%|##########| 20/20 [02:43<00:00,  9.54s/it][A[32m[I 2021-01-11 18:46:16,399][0m Trial 26 finished with value: 0.49605750927615944 and parameters: {'num_leaves': 205}. Best is trial 18 with value: 0.4773056660896877.[0m
+num_leaves, val_score: 0.477107: 100%|##########| 20/20 [02:43<00:00,  8.20s/it]
+
+  0%|          | 0/10 [00:00<?, ?it/s][A
+bagging, val_score: 0.477107:   0%|          | 0/10 [00:00<?, ?it/s][A
+bagging, val_score: 0.477107:   0%|          | 0/10 [00:04<?, ?it/s][A
+bagging, val_score: 0.477107:  10%|#         | 1/10 [00:04<00:42,  4.77s/it][A[32m[I 2021-01-11 18:46:21,175][0m Trial 27 finished with value: 0.48082863783573926 and parameters: {'bagging_fraction': 0.75476391575562, 'bagging_freq': 2}. Best is trial 27 with value: 0.48082863783573926.[0m
+
+bagging, val_score: 0.477107:  10%|#         | 1/10 [00:04<00:42,  4.77s/it][A
+bagging, val_score: 0.477107:  10%|#         | 1/10 [00:08<00:42,  4.77s/it][A
+bagging, val_score: 0.477107:  20%|##        | 2/10 [00:08<00:31,  3.91s/it][A[32m[I 2021-01-11 18:46:24,481][0m Trial 28 finished with value: 0.4929086890702359 and parameters: {'bagging_fraction': 0.41887483878867676, 'bagging_freq': 7}. Best is trial 27 with value: 0.48082863783573926.[0m
+
+bagging, val_score: 0.477107:  20%|##        | 2/10 [00:08<00:31,  3.91s/it][A
+bagging, val_score: 0.477107:  20%|##        | 2/10 [00:12<00:31,  3.91s/it][A
+bagging, val_score: 0.477107:  30%|###       | 3/10 [00:12<00:29,  4.26s/it][A[32m[I 2021-01-11 18:46:29,158][0m Trial 29 finished with value: 0.48087193509945464 and parameters: {'bagging_fraction': 0.9975905003244908, 'bagging_freq': 7}. Best is trial 27 with value: 0.48082863783573926.[0m
+
+bagging, val_score: 0.477107:  30%|###       | 3/10 [00:12<00:29,  4.26s/it][A
+bagging, val_score: 0.477107:  30%|###       | 3/10 [00:15<00:29,  4.26s/it][A
+bagging, val_score: 0.477107:  40%|####      | 4/10 [00:15<00:22,  3.76s/it][A[32m[I 2021-01-11 18:46:32,161][0m Trial 30 finished with value: 0.4899898903526432 and parameters: {'bagging_fraction': 0.421523550878984, 'bagging_freq': 1}. Best is trial 27 with value: 0.48082863783573926.[0m
+
+bagging, val_score: 0.477107:  40%|####      | 4/10 [00:15<00:22,  3.76s/it][A
+bagging, val_score: 0.477107:  40%|####      | 4/10 [00:19<00:22,  3.76s/it][A
+bagging, val_score: 0.477107:  50%|#####     | 5/10 [00:19<00:18,  3.76s/it][A[32m[I 2021-01-11 18:46:35,924][0m Trial 31 finished with value: 0.4791703105167212 and parameters: {'bagging_fraction': 0.9509983308942593, 'bagging_freq': 4}. Best is trial 31 with value: 0.4791703105167212.[0m
+
+bagging, val_score: 0.477107:  50%|#####     | 5/10 [00:19<00:18,  3.76s/it][A
+bagging, val_score: 0.477107:  50%|#####     | 5/10 [00:22<00:18,  3.76s/it][A
+bagging, val_score: 0.477107:  60%|######    | 6/10 [00:22<00:14,  3.61s/it][A[32m[I 2021-01-11 18:46:39,247][0m Trial 32 finished with value: 0.47861439560697916 and parameters: {'bagging_fraction': 0.5991594178393926, 'bagging_freq': 4}. Best is trial 32 with value: 0.47861439560697916.[0m
+
+bagging, val_score: 0.477107:  60%|######    | 6/10 [00:22<00:14,  3.61s/it][A
+bagging, val_score: 0.477107:  60%|######    | 6/10 [00:26<00:14,  3.61s/it][A
+bagging, val_score: 0.477107:  70%|#######   | 7/10 [00:26<00:10,  3.52s/it][A[32m[I 2021-01-11 18:46:42,582][0m Trial 33 finished with value: 0.4826233073982797 and parameters: {'bagging_fraction': 0.821646574995271, 'bagging_freq': 6}. Best is trial 32 with value: 0.47861439560697916.[0m
+
+bagging, val_score: 0.477107:  70%|#######   | 7/10 [00:26<00:10,  3.52s/it][A
+bagging, val_score: 0.477107:  70%|#######   | 7/10 [00:29<00:10,  3.52s/it][A
+bagging, val_score: 0.477107:  80%|########  | 8/10 [00:29<00:06,  3.47s/it][A[32m[I 2021-01-11 18:46:45,938][0m Trial 34 finished with value: 0.48303446850287424 and parameters: {'bagging_fraction': 0.5820627595366245, 'bagging_freq': 2}. Best is trial 32 with value: 0.47861439560697916.[0m
+
+bagging, val_score: 0.477107:  80%|########  | 8/10 [00:29<00:06,  3.47s/it][A
+bagging, val_score: 0.477107:  80%|########  | 8/10 [00:33<00:06,  3.47s/it][A
+bagging, val_score: 0.477107:  90%|######### | 9/10 [00:33<00:03,  3.62s/it][A[32m[I 2021-01-11 18:46:49,888][0m Trial 35 finished with value: 0.48218907791516086 and parameters: {'bagging_fraction': 0.8747304563403653, 'bagging_freq': 5}. Best is trial 32 with value: 0.47861439560697916.[0m
+
+bagging, val_score: 0.477107:  90%|######### | 9/10 [00:33<00:03,  3.62s/it][A
+bagging, val_score: 0.477107:  90%|######### | 9/10 [00:37<00:03,  3.62s/it][A
+bagging, val_score: 0.477107: 100%|##########| 10/10 [00:37<00:00,  3.77s/it][A[32m[I 2021-01-11 18:46:53,983][0m Trial 36 finished with value: 0.48209554443906144 and parameters: {'bagging_fraction': 0.5764470547229972, 'bagging_freq': 1}. Best is trial 32 with value: 0.47861439560697916.[0m
+bagging, val_score: 0.477107: 100%|##########| 10/10 [00:37<00:00,  3.76s/it]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+feature_fraction_stage2, val_score: 0.477107:   0%|          | 0/3 [00:00<?, ?it/s][A
+feature_fraction_stage2, val_score: 0.477107:   0%|          | 0/3 [00:03<?, ?it/s][A
+feature_fraction_stage2, val_score: 0.477107:  33%|###3      | 1/3 [00:03<00:07,  3.65s/it][A[32m[I 2021-01-11 18:46:57,642][0m Trial 37 finished with value: 0.4824947970064482 and parameters: {'feature_fraction': 0.48000000000000004}. Best is trial 37 with value: 0.4824947970064482.[0m
+
+feature_fraction_stage2, val_score: 0.477107:  33%|###3      | 1/3 [00:03<00:07,  3.65s/it][A
+feature_fraction_stage2, val_score: 0.477107:  33%|###3      | 1/3 [00:07<00:07,  3.65s/it][A
+feature_fraction_stage2, val_score: 0.477107:  67%|######6   | 2/3 [00:07<00:03,  3.83s/it][A[32m[I 2021-01-11 18:47:01,602][0m Trial 38 finished with value: 0.48069060736121605 and parameters: {'feature_fraction': 0.44800000000000006}. Best is trial 38 with value: 0.48069060736121605.[0m
+
+feature_fraction_stage2, val_score: 0.477107:  67%|######6   | 2/3 [00:07<00:03,  3.83s/it][A
+feature_fraction_stage2, val_score: 0.477107:  67%|######6   | 2/3 [00:11<00:03,  3.83s/it][A
+feature_fraction_stage2, val_score: 0.477107: 100%|##########| 3/3 [00:11<00:00,  3.90s/it][A[32m[I 2021-01-11 18:47:05,587][0m Trial 39 finished with value: 0.47904646495303266 and parameters: {'feature_fraction': 0.41600000000000004}. Best is trial 39 with value: 0.47904646495303266.[0m
+feature_fraction_stage2, val_score: 0.477107: 100%|##########| 3/3 [00:11<00:00,  3.87s/it]
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+regularization_factors, val_score: 0.477107:   0%|          | 0/20 [00:00<?, ?it/s][A
+regularization_factors, val_score: 0.477107:   0%|          | 0/20 [00:04<?, ?it/s][A
+regularization_factors, val_score: 0.477107:   5%|5         | 1/20 [00:04<01:21,  4.28s/it][A[32m[I 2021-01-11 18:47:09,876][0m Trial 40 finished with value: 0.4771070849575323 and parameters: {'lambda_l1': 6.503756686450855e-08, 'lambda_l2': 2.2088516847453967e-08}. Best is trial 40 with value: 0.4771070849575323.[0m
+
+regularization_factors, val_score: 0.477107:   5%|5         | 1/20 [00:04<01:21,  4.28s/it][A
+regularization_factors, val_score: 0.477107:   5%|5         | 1/20 [00:08<01:21,  4.28s/it][A
+regularization_factors, val_score: 0.477107:  10%|#         | 2/20 [00:08<01:12,  4.05s/it][A[32m[I 2021-01-11 18:47:13,768][0m Trial 41 finished with value: 0.4771070850344955 and parameters: {'lambda_l1': 2.6356988902028416e-08, 'lambda_l2': 1.6791338028157618e-08}. Best is trial 40 with value: 0.4771070849575323.[0m
+
+regularization_factors, val_score: 0.477107:  10%|#         | 2/20 [00:08<01:12,  4.05s/it][A
+regularization_factors, val_score: 0.477107:  10%|#         | 2/20 [00:12<01:12,  4.05s/it][A
+regularization_factors, val_score: 0.477107:  15%|#5        | 3/20 [00:12<01:12,  4.26s/it][A[32m[I 2021-01-11 18:47:18,274][0m Trial 42 finished with value: 0.4771070850606643 and parameters: {'lambda_l1': 1.4043651030368814e-08, 'lambda_l2': 1.3046314744488903e-08}. Best is trial 40 with value: 0.4771070849575323.[0m
+
+regularization_factors, val_score: 0.477107:  15%|#5        | 3/20 [00:12<01:12,  4.26s/it][A
+regularization_factors, val_score: 0.477107:  15%|#5        | 3/20 [00:16<01:12,  4.26s/it][A
+regularization_factors, val_score: 0.477107:  20%|##        | 4/20 [00:16<01:06,  4.16s/it][A[32m[I 2021-01-11 18:47:22,276][0m Trial 43 finished with value: 0.4771070850560446 and parameters: {'lambda_l1': 1.7383338000408736e-08, 'lambda_l2': 1.1100879736192233e-08}. Best is trial 40 with value: 0.4771070849575323.[0m
+
+regularization_factors, val_score: 0.477107:  20%|##        | 4/20 [00:16<01:06,  4.16s/it][A
+regularization_factors, val_score: 0.477107:  20%|##        | 4/20 [00:21<01:06,  4.16s/it][A
+regularization_factors, val_score: 0.477107:  25%|##5       | 5/20 [00:21<01:05,  4.36s/it][A[32m[I 2021-01-11 18:47:27,003][0m Trial 44 finished with value: 0.4771070850615956 and parameters: {'lambda_l1': 1.238693469618971e-08, 'lambda_l2': 1.2624887246923696e-08}. Best is trial 40 with value: 0.4771070849575323.[0m
+
+regularization_factors, val_score: 0.477107:  25%|##5       | 5/20 [00:21<01:05,  4.36s/it][A
+regularization_factors, val_score: 0.477107:  25%|##5       | 5/20 [00:25<01:05,  4.36s/it][A
+regularization_factors, val_score: 0.477107:  30%|###       | 6/20 [00:25<00:58,  4.20s/it][A[32m[I 2021-01-11 18:47:30,891][0m Trial 45 finished with value: 0.47710708505247884 and parameters: {'lambda_l1': 1.542105391248215e-08, 'lambda_l2': 1.4592540298359227e-08}. Best is trial 40 with value: 0.4771070849575323.[0m
+
+regularization_factors, val_score: 0.477107:  30%|###       | 6/20 [00:25<00:58,  4.20s/it][A
+regularization_factors, val_score: 0.477107:  30%|###       | 6/20 [00:29<00:58,  4.20s/it][A
+regularization_factors, val_score: 0.477107:  35%|###5      | 7/20 [00:29<00:53,  4.15s/it][A[32m[I 2021-01-11 18:47:34,932][0m Trial 46 finished with value: 0.4771070850378593 and parameters: {'lambda_l1': 1.7544107686352183e-08, 'lambda_l2': 2.3887981003783798e-08}. Best is trial 40 with value: 0.4771070849575323.[0m
+
+regularization_factors, val_score: 0.477107:  35%|###5      | 7/20 [00:29<00:53,  4.15s/it][A
+regularization_factors, val_score: 0.477107:  35%|###5      | 7/20 [00:33<00:53,  4.15s/it][A
+regularization_factors, val_score: 0.477107:  40%|####      | 8/20 [00:33<00:51,  4.27s/it][A[32m[I 2021-01-11 18:47:39,472][0m Trial 47 finished with value: 0.47710708504518207 and parameters: {'lambda_l1': 1.9422955447566e-08, 'lambda_l2': 1.706148999678785e-08}. Best is trial 40 with value: 0.4771070849575323.[0m
+
+regularization_factors, val_score: 0.477107:  40%|####      | 8/20 [00:33<00:51,  4.27s/it][A
+regularization_factors, val_score: 0.477107:  40%|####      | 8/20 [00:38<00:51,  4.27s/it][A
+regularization_factors, val_score: 0.477107:  45%|####5     | 9/20 [00:38<00:47,  4.36s/it][A[32m[I 2021-01-11 18:47:44,010][0m Trial 48 finished with value: 0.47710708502334026 and parameters: {'lambda_l1': 2.554424506697604e-08, 'lambda_l2': 2.2150947294715655e-08}. Best is trial 40 with value: 0.4771070849575323.[0m
+
+regularization_factors, val_score: 0.477107:  45%|####5     | 9/20 [00:38<00:47,  4.36s/it][A
+regularization_factors, val_score: 0.477107:  45%|####5     | 9/20 [00:46<00:47,  4.36s/it][A
+regularization_factors, val_score: 0.477107:  50%|#####     | 10/20 [00:46<00:54,  5.46s/it][A[32m[I 2021-01-11 18:47:51,925][0m Trial 49 finished with value: 0.4771070849086015 and parameters: {'lambda_l1': 6.92084581874273e-08, 'lambda_l2': 6.023537289591982e-08}. Best is trial 49 with value: 0.4771070849086015.[0m
+
+regularization_factors, val_score: 0.477107:  50%|#####     | 10/20 [00:46<00:54,  5.46s/it][A
+regularization_factors, val_score: 0.477107:  50%|#####     | 10/20 [00:50<00:54,  5.46s/it][A
+regularization_factors, val_score: 0.477107:  55%|#####5    | 11/20 [00:50<00:44,  4.99s/it][A[32m[I 2021-01-11 18:47:55,862][0m Trial 50 finished with value: 0.47710706993737706 and parameters: {'lambda_l1': 3.943670083714442e-06, 'lambda_l2': 6.8796886642173765e-06}. Best is trial 50 with value: 0.47710706993737706.[0m
+
+regularization_factors, val_score: 0.477107:  55%|#####5    | 11/20 [00:50<00:44,  4.99s/it][A
+regularization_factors, val_score: 0.477074:  55%|#####5    | 11/20 [00:54<00:44,  4.99s/it][A
+regularization_factors, val_score: 0.477074:  60%|######    | 12/20 [00:54<00:38,  4.84s/it][A[32m[I 2021-01-11 18:48:00,355][0m Trial 51 finished with value: 0.4770740155782224 and parameters: {'lambda_l1': 9.782321713074196e-06, 'lambda_l2': 4.740412198927029e-05}. Best is trial 51 with value: 0.4770740155782224.[0m
+
+regularization_factors, val_score: 0.477074:  60%|######    | 12/20 [00:54<00:38,  4.84s/it][A
+regularization_factors, val_score: 0.477074:  60%|######    | 12/20 [00:59<00:38,  4.84s/it][A
+regularization_factors, val_score: 0.477074:  65%|######5   | 13/20 [00:59<00:33,  4.73s/it][A[32m[I 2021-01-11 18:48:04,846][0m Trial 52 finished with value: 0.4770740083691759 and parameters: {'lambda_l1': 2.8287534381273412e-05, 'lambda_l2': 3.2575175778530355e-05}. Best is trial 52 with value: 0.4770740083691759.[0m
+
+regularization_factors, val_score: 0.477074:  65%|######5   | 13/20 [00:59<00:33,  4.73s/it][A
+regularization_factors, val_score: 0.477074:  65%|######5   | 13/20 [01:03<00:33,  4.73s/it][A
+regularization_factors, val_score: 0.477074:  70%|#######   | 14/20 [01:03<00:27,  4.52s/it][A[32m[I 2021-01-11 18:48:08,865][0m Trial 53 finished with value: 0.47776498729582945 and parameters: {'lambda_l1': 6.386824555941658e-05, 'lambda_l2': 6.199734193553801e-05}. Best is trial 52 with value: 0.4770740083691759.[0m
+
+regularization_factors, val_score: 0.477074:  70%|#######   | 14/20 [01:03<00:27,  4.52s/it][A
+regularization_factors, val_score: 0.477074:  70%|#######   | 14/20 [01:07<00:27,  4.52s/it][A
+regularization_factors, val_score: 0.477074:  75%|#######5  | 15/20 [01:07<00:22,  4.56s/it][A[32m[I 2021-01-11 18:48:13,511][0m Trial 54 finished with value: 0.47776505598150953 and parameters: {'lambda_l1': 2.321929290653614e-05, 'lambda_l2': 5.7593384679577033e-05}. Best is trial 52 with value: 0.4770740083691759.[0m
+
+regularization_factors, val_score: 0.477074:  75%|#######5  | 15/20 [01:07<00:22,  4.56s/it][A
+regularization_factors, val_score: 0.477074:  75%|#######5  | 15/20 [01:12<00:22,  4.56s/it][A
+regularization_factors, val_score: 0.477074:  80%|########  | 16/20 [01:12<00:17,  4.42s/it][A[32m[I 2021-01-11 18:48:17,602][0m Trial 55 finished with value: 0.4771070761877237 and parameters: {'lambda_l1': 2.735912029272166e-06, 'lambda_l2': 3.5638752056535724e-06}. Best is trial 52 with value: 0.4770740083691759.[0m
+
+regularization_factors, val_score: 0.477074:  80%|########  | 16/20 [01:12<00:17,  4.42s/it][A
+regularization_factors, val_score: 0.477074:  80%|########  | 16/20 [01:16<00:17,  4.42s/it][A
+regularization_factors, val_score: 0.477074:  85%|########5 | 17/20 [01:16<00:13,  4.46s/it][A[32m[I 2021-01-11 18:48:22,176][0m Trial 56 finished with value: 0.47710707770546 and parameters: {'lambda_l1': 2.457437160968973e-06, 'lambda_l2': 2.7799230834425267e-06}. Best is trial 52 with value: 0.4770740083691759.[0m
+
+regularization_factors, val_score: 0.477074:  85%|########5 | 17/20 [01:16<00:13,  4.46s/it][A
+regularization_factors, val_score: 0.477074:  85%|########5 | 17/20 [01:20<00:13,  4.46s/it][A
+regularization_factors, val_score: 0.477074:  90%|######### | 18/20 [01:20<00:08,  4.35s/it][A[32m[I 2021-01-11 18:48:26,258][0m Trial 57 finished with value: 0.4771070786989403 and parameters: {'lambda_l1': 1.9880497238105075e-06, 'lambda_l2': 2.538443941154229e-06}. Best is trial 52 with value: 0.4770740083691759.[0m
+
+regularization_factors, val_score: 0.477074:  90%|######### | 18/20 [01:20<00:08,  4.35s/it][A
+regularization_factors, val_score: 0.477074:  90%|######### | 18/20 [01:24<00:08,  4.35s/it][A
+regularization_factors, val_score: 0.477074:  95%|#########5| 19/20 [01:24<00:04,  4.22s/it][A[32m[I 2021-01-11 18:48:30,192][0m Trial 58 finished with value: 0.47710707641132155 and parameters: {'lambda_l1': 2.660917465030981e-06, 'lambda_l2': 3.499314631808427e-06}. Best is trial 52 with value: 0.4770740083691759.[0m
+
+regularization_factors, val_score: 0.477074:  95%|#########5| 19/20 [01:24<00:04,  4.22s/it][A
+regularization_factors, val_score: 0.477074:  95%|#########5| 19/20 [01:28<00:04,  4.22s/it][A
+regularization_factors, val_score: 0.477074: 100%|##########| 20/20 [01:28<00:00,  4.16s/it][A[32m[I 2021-01-11 18:48:34,193][0m Trial 59 finished with value: 0.4771070785271119 and parameters: {'lambda_l1': 2.4097520108040176e-06, 'lambda_l2': 2.195991358239139e-06}. Best is trial 52 with value: 0.4770740083691759.[0m
+regularization_factors, val_score: 0.477074: 100%|##########| 20/20 [01:28<00:00,  4.43s/it]
+
+  0%|          | 0/5 [00:00<?, ?it/s][A
+min_data_in_leaf, val_score: 0.477074:   0%|          | 0/5 [00:00<?, ?it/s][A
+min_data_in_leaf, val_score: 0.474299:   0%|          | 0/5 [00:03<?, ?it/s][A
+min_data_in_leaf, val_score: 0.474299:  20%|##        | 1/5 [00:03<00:14,  3.50s/it][A[32m[I 2021-01-11 18:48:37,700][0m Trial 60 finished with value: 0.47429871087533326 and parameters: {'min_child_samples': 100}. Best is trial 60 with value: 0.47429871087533326.[0m
+
+min_data_in_leaf, val_score: 0.474299:  20%|##        | 1/5 [00:03<00:14,  3.50s/it][A
+min_data_in_leaf, val_score: 0.474299:  20%|##        | 1/5 [00:07<00:14,  3.50s/it][A
+min_data_in_leaf, val_score: 0.474299:  40%|####      | 2/5 [00:07<00:11,  3.93s/it][A[32m[I 2021-01-11 18:48:41,928][0m Trial 61 finished with value: 0.47691118809721794 and parameters: {'min_child_samples': 50}. Best is trial 60 with value: 0.47429871087533326.[0m
+
+min_data_in_leaf, val_score: 0.474299:  40%|####      | 2/5 [00:07<00:11,  3.93s/it][A
+min_data_in_leaf, val_score: 0.474299:  40%|####      | 2/5 [00:12<00:11,  3.93s/it][A
+min_data_in_leaf, val_score: 0.474299:  60%|######    | 3/5 [00:12<00:08,  4.19s/it][A[32m[I 2021-01-11 18:48:46,433][0m Trial 62 finished with value: 0.47906406250186073 and parameters: {'min_child_samples': 10}. Best is trial 60 with value: 0.47429871087533326.[0m
+
+min_data_in_leaf, val_score: 0.474299:  60%|######    | 3/5 [00:12<00:08,  4.19s/it][A
+min_data_in_leaf, val_score: 0.474299:  60%|######    | 3/5 [00:17<00:08,  4.19s/it][A
+min_data_in_leaf, val_score: 0.474299:  80%|########  | 4/5 [00:17<00:04,  4.43s/it][A[32m[I 2021-01-11 18:48:51,219][0m Trial 63 finished with value: 0.4830380768292626 and parameters: {'min_child_samples': 5}. Best is trial 60 with value: 0.47429871087533326.[0m
+
+min_data_in_leaf, val_score: 0.474299:  80%|########  | 4/5 [00:17<00:04,  4.43s/it][A
+min_data_in_leaf, val_score: 0.474299:  80%|########  | 4/5 [00:22<00:04,  4.43s/it][A
+min_data_in_leaf, val_score: 0.474299: 100%|##########| 5/5 [00:22<00:00,  4.76s/it][A[32m[I 2021-01-11 18:48:56,565][0m Trial 64 finished with value: 0.47939747890898265 and parameters: {'min_child_samples': 25}. Best is trial 60 with value: 0.47429871087533326.[0m
+min_data_in_leaf, val_score: 0.474299: 100%|##########| 5/5 [00:22<00:00,  4.47s/it]
+Best score: 0.47429871087533326
+Best params: {'objective': 'binary', 'metric': 'binary_logloss', 'verbosity': -1, 'boosting_type': 'gbdt', 'feature_pre_filter': False, 'lambda_l1': 2.8287534381273412e-05, 'lambda_l2': 3.2575175778530355e-05, 'num_leaves': 31, 'feature_fraction': 0.4, 'bagging_fraction': 1.0, 'bagging_freq': 0, 'min_child_samples': 100}
+  Params: 
+	objective: binary
+	metric: binary_logloss
+	verbosity: -1
+	boosting_type: gbdt
+	feature_pre_filter: False
+	lambda_l1: 0.0
+	lambda_l2: 0.0
+	num_leaves: 256
+	feature_fraction: 1.0
+	bagging_fraction: 0.452599666040136
+	bagging_freq: 4
+	min_child_samples: 20
+	num_iterations: 1000
+	early_stopping_round: 100
+CPU times: user 2h 42min 12s, sys: 24.8 s, total: 2h 42min 37s
+Wall time: 5min 55s
