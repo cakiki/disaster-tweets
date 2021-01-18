@@ -18,7 +18,7 @@ docker-run-jupyter:
 	--workdir=/home/jovyan/work \
 	 disaster-tweets:0.0.3
 docker-run-jupyter-gpu:
-	docker run --rm -it -p 8888:8888 --gpus all --env PYTHONPATH=/tf/work/src \
+	docker run --rm -it -p 8888:8888 --gpus all --env PYTHONPATH=/tf/src \
 			--mount type=bind,source=${PWD},target=/tf \
 			disaster-tweets-gpu:0.0.1
 fix-permissions:
