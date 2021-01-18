@@ -7,8 +7,10 @@
 
 
 docker-build-image:
-	docker build -t disaster-tweets:0.0.3 .
+	docker build -t disaster-tweets:0.0.3 ./dockerfiles/vanilla/
 
+docker-build-image-gpu:
+	docker build -t disaster-tweets-gpu:0.0.1 ./dockerfiles/gpu/
 docker-run-jupyter:
 	docker run --rm -it -p 8888:8888 -p 9999:9999 -p 6006:6006 \
 	--env PYTHONPATH=/home/jovyan/work/src \
@@ -18,7 +20,7 @@ docker-run-jupyter:
 docker-run-jupyter-gpu:
 	docker run --rm -it -p 8888:8888 --gpus all --env PYTHONPATH=/tf/work/src \
 			--mount type=bind,source=${PWD},target=/tf \
-			tensorflow/tensorflow:2.4.0rc2-gpu-jupyter
+			disaster-tweets-gpu:0.0.1
 fix-permissions:
 	sudo chown -R 1000:1000 .
 
