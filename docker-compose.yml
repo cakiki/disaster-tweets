@@ -2,7 +2,9 @@ version: '3.8'
 
 services:
         python:
-                build: .
+                build:
+                    context: .
+                    dockerfile: ./dockerfiles/vanilla/Dockerfile
                 container_name: disaster-tweets
                 ports:
                         - "8888:8888"
