@@ -3,22 +3,20 @@
 </h1>
 
 ## Kaggle Competition Description:
+This section is taken verbatim from the [kaggle competition page](https://www.kaggle.com/c/nlp-getting-started)
 
-Twitter has become an important communication channel in times of emergency.
-The ubiquitousness of smartphones enables people to announce an emergency they’re observing in real-time. Because of this, more agencies are interested in programatically monitoring Twitter (i.e. disaster relief organizations and news agencies).
+>Twitter has become an important communication channel in times of emergency.
+>The ubiquitousness of smartphones enables people to announce an emergency they’re observing in real-time. Because of this, more agencies are interested in programatically monitoring Twitter (i.e. disaster relief organizations and news agencies).
+>
+>But, it’s not always clear whether a person’s words are actually announcing a disaster. Take this example:
 
-But, it’s not always clear whether a person’s words are actually announcing a disaster. Take this example:
-<div><p>
-<img style="float: left; width: 150px; margin-right:10px;" src="https://storage.googleapis.com/kaggle-media/competitions/tweet_screenshot.png">
+![](reports/figures/ablaze.png)
+
 
 The author explicitly uses the word “ABLAZE” but means it metaphorically. This is clear to a human right away, especially with the visual aid. But it’s less clear to a machine.
-</p>
-<p>In this competition, you’re challenged to build a machine learning model that predicts which Tweets are about real disasters and which one’s aren’t. You’ll have access to a dataset of 10,000 tweets that were hand classified. If this is your first time working on an NLP problem, we've created a <a href="https://www.kaggle.com/philculliton/nlp-getting-started-tutorial">quick tutorial</a> to get you up and running.
-<p>Disclaimer: The dataset for this competition contains text that may be considered profane, vulgar, or offensive.</p></div>
-<br>
-<br>
-<br>
-<br>
+In this competition, you’re challenged to build a machine learning model that predicts which Tweets are about real disasters and which one’s aren’t. You’ll have access to a dataset of 10,000 tweets that were hand classified. If this is your first time working on an NLP problem, we've created a <a href="https://www.kaggle.com/philculliton/nlp-getting-started-tutorial">quick tutorial</a> to get you up and running.
+Disclaimer: The dataset for this competition contains text that may be considered profane, vulgar, or offensive.</p></div>
+
 
 ## Project Organization
 <details>
@@ -29,49 +27,38 @@ The author explicitly uses the word “ABLAZE” but means it metaphorically. Th
 ```
 
     ├── LICENSE
-    ├── Dockerfile         <- TODO
-    ├── docker-compose.yml <- TODO 
-    ├── Makefile           <- Makefile with commands like `make data` or `make train`
-    ├── README.md          <- The top-level README for developers using this project.
+    ├── dockerfiles        <- Folder that contains all project images, both GPU and vanilla
+    ├── docker-compose.yml <- docker-compose file that runs the vanilla image (deprecated by the makefile, but kept for compatibility issues) 
+    ├── Makefile           <- Makefile with commands to build and run the various docker images
+    ├── README.md          <- You're looking at me
     ├── data
-    │   ├── external       <- Data from third party sources.
-    │   ├── interim        <- Intermediate data that has been transformed.
-    │   ├── processed      <- The final, canonical data sets for modeling.
-    │   └── raw            <- The original, immutable data dump.
+    │   ├── external       <- Third-party data
+    │   ├── features       <- Generated features and representations.
+    |   └── processed      <- Generated artifacts.
+    │   
     │
     ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
     │
-    ├── models             <- Trained and serialized models, model predictions, or model summaries
+    ├── models             <- Trained and serialized models and model predictions in CSV format
     │
-    ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-    │                         the creator's initials, and a short `-` delimited description, e.g.
-    │                         `1.0-jqp-initial-data-exploration`.
+    ├── notebooks          <- Jupyter notebooks
+    │                         
+    │                         
     │
-    ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
+    ├── references         <- Data dictionaries, manuals, and all other explanatory materials
     │
     ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
     │   └── figures        <- Generated graphics and figures to be used in reporting
     │
-    ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-    │                         generated with `pip freeze > requirements.txt`
+    |
+    │                         
     │
-    ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
-    └── src                <- Source code for use in this project.
+    |
+    └── src                <- Source code and util functions used in the notebooks
         ├── __init__.py    <- Makes src a Python module
         │
-        ├── data           <- Scripts to download or generate data
-        │   └── make_dataset.py
-        │
-        ├── features       <- Scripts to turn raw data into features for modeling
-        │   └── build_features.py
-        │
-        ├── models         <- Scripts to train models and then use trained models to make
-        │   │                 predictions
-        │   ├── predict_model.py
-        │   └── train_model.py
-        │
-        └── visualization  <- Scripts to create exploratory and results oriented visualizations
-            └── visualize.py
+        └── evaluation.py  <- Evaluates an sklearn(-compatible) model on the Kaggle training set and generates a submission file
+
 ```
 </p>
 </details>
@@ -119,7 +106,7 @@ The author explicitly uses the word “ABLAZE” but means it metaphorically. Th
         - Sync: Share insights & features from first iteration in group and with supervisor
         - Everyone attempts to improve their models from insights & features
     * **Tasks:**
-        - [ ] Sync Meeting (with supervisor?): everyone (pending)
+        - [x] Sync Meeting (with supervisor?): everyone (pending)
         - [ ] Improve own features & models: everyone (pending)
     * **Deliverables:** Model dumps and their evaluation results
     * **Due:** ?
