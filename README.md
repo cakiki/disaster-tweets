@@ -36,8 +36,8 @@ This section is taken verbatim from the [kaggle competition page](https://www.ka
     ├── README.md          <- You're looking at me
     ├── data
     │   ├── external       <- Third-party data
-    │   ├── features       <- Generated features and representations.
-    |   └── processed      <- Generated artifacts.
+    │   ├── features       <- Generated features and representations
+    |   └── processed      <- Corrected dataset and other generated artifacts
     │   
     │
     ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
