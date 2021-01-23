@@ -17,14 +17,10 @@ log.basicConfig(level=log.DEBUG)
 train_data_file = '../data/external/kaggle/train.csv'
 # The test data file for submissions
 test_data_file = '../data/external/kaggle/test.csv'
-# The number of times Cross-Validation should be repeated 
-n_runs = 1
-# The number of folds in Cross-Validation
-n_folds = 10
 # The random seed for reproducable results in the train-test splits
 seed = 42
 
-def evaluate(model, store_model=True, store_submission=True, embeddings=None):
+def evaluate(model, store_model=True, store_submission=True, embeddings=None, preprocessing_func=None, n_folds=10, n_runs=1):
     """Evaluates the given classifier model on the Kaggle competition data set and optionally generates a submission file.
    
     The model must implements the scikit-learn API (i.e. `fit` and `predict`). Walk through the notebook
@@ -38,6 +34,12 @@ def evaluate(model, store_model=True, store_submission=True, embeddings=None):
     :type store_model: bool, optional
     :param store_submission: Whether to store a submission file from the model in `/models`, defaults to `True`
     :type store_submission: bool, optional
+    :param preprocessing_func: Applies a preprocessing function to the individual entries of data matrix read from the training file. The function is given a row in the data matrix and expects some result that can be used by the given model. Defaults to `None`
+    :type preprocessing_func: func, optional
+    :param n_folds: The number of folds to perform (change only for debugging), defaults to `10`
+    :type n_folds: int, optional
+    :param n_runs: The number of experiments to run (change only for debugging), defaults to `1`
+    :type n_runs: int, optional
     """
     log.info('Loading training data from {}...'.format(train_data_file))
     # Load data and perform some sanity checks
@@ -51,16 +53,23 @@ def evaluate(model, store_model=True, store_submission=True, embeddings=None):
     # assert set(np.unique(y)) == set([0, 1])
     log.info('-> Number of samples: {}'.format(len(y)))
     log.info('-> Number of features: {}'.format(X.shape[1]))
-    
+    # Apply preprocessing function if provided
+    if preprocessing_func is not None:
+        log.info('Applying pre-processing function...')
+        X = np.array([preprocessing_func(x) for x in X])
+        log.info('-> Feature matrix after preprocessing: {}'.format(X.shape))
+
     # Setup cross-validation (CV) engine
     rskf = RepeatedStratifiedKFold(n_splits=n_folds, n_repeats=n_runs, random_state=seed)
     log.info('Evaluating model with {} experiment(s) of {}-fold Cross Validation...'.format(n_runs, n_folds))
     # We want to get model results for the ground truth (y_true) and the corresponding model prediction (y_pred)
     train_res = {
+        'idx': [],
         'y_true': [],
         'y_pred': []
     }
     test_res = {
+        'idx': [],
         'y_true': [],
         'y_pred': []
     }
@@ -72,9 +81,11 @@ def evaluate(model, store_model=True, store_submission=True, embeddings=None):
         cv_model = copy.deepcopy(model)
         cv_model.fit(X_train, y_train)
         # Gather training predictions with corresponding ground truth
+        train_res['idx'].extend(train_idx)
         train_res['y_true'].extend(y_train)
         train_res['y_pred'].extend(cv_model.predict(X_train))
         # Gather test predictions with corresponding ground truth
+        test_res['idx'].extend(test_idx)
         test_res['y_true'].extend(y[test_idx])
         test_res['y_pred'].extend(cv_model.predict(X[test_idx]))
         # Finished iteration
@@ -100,12 +111,14 @@ def evaluate(model, store_model=True, store_submission=True, embeddings=None):
     prec_test = metrics.precision_score(test_res['y_true'], test_res['y_pred'])
     log.info('Precision: {:.2f}% (training); {:.2f}% (test)'.format(prec_train*100, prec_test*100))
     
-    # Retrain the model on the complete data set to store the model and/or create a submission file
+    # Retrain the model on the complete data set to 
+    log.info('---')
+    log.info('Retraining model on the complete data set...')
+    model.fit(X, y)
+
+    # Store the model and/or create a submission file
     if(store_submission or store_model):
         # Retrain model on complete data set
-        log.info('---')
-        log.info('Retraining model on the complete data set...')
-        model.fit(X, y)
         f1_score = metrics.f1_score(y, model.predict(X))
         log.info('-> F1-Score on complete training set: {:.2f}'.format(f1_score))
         # Create label string for this model
@@ -122,9 +135,11 @@ def evaluate(model, store_model=True, store_submission=True, embeddings=None):
             # Load test data for submission and compute model predictions
             df_test = pd.read_csv(test_data_file)
             if not embeddings:
-                X_subm = df[['keyword', 'location', 'text']].values
+                X_subm = df_test[['keyword', 'location', 'text']].values
             else:
                 X_subm = np.load(f'../data/features/test_{embeddings}_embeddings.npy')
+            if preprocessing_func is not None:
+                X_subm = np.array([preprocessing_func(x) for x in X_subm])
             y_subm = model.predict(X_subm)
             # Compile predictions into a submission data frame
             df_subm = pd.DataFrame()
@@ -135,6 +150,4 @@ def evaluate(model, store_model=True, store_submission=True, embeddings=None):
             df_subm.to_csv(file_path, index=False)
             log.info('-> Stored submission file to {}'.format(file_path))
     log.info('Evaluation finished.')
-            
-            
-    
+    return X, train_res, test_res
