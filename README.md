@@ -133,14 +133,31 @@ This section is taken verbatim from the [kaggle competition page](https://www.ka
 </p>
 </details>
 
-## Docker
+## Programming Environment
+### Makefile
+#### Regular Image:
+```console
+foo@bar:/disaster-tweets$ make docker-build-image
+```
+```console
+foo@bar:/disaster-tweets$ make docker-run-jupyter
+```
+
+#### GPU Image:
+```console
+foo@bar:/disaster-tweets$ make docker-build-image-gpu
+```
+```console
+foo@bar:/disaster-tweets$ make docker-run-jupyter-gpu
+```
+#### NVIDIA RAPIDS Image:
+```console
+foo@bar:/disaster-tweets$ make docker-run-rapids
+```
+### docker-compose
 To fire up the environment using docker-compose, run:
 ```console
 foo@bar:/disaster-tweets$ docker-compose up
-```
-To fire up the environment using docker, run:
-```console
-foo@bar:/disaster-tweets$ docker run --rm -p 8888:8888 --mount type=bind,source=$PWD,target=/home/jovyan cakiki/disaster-tweets
 ```
 
 
