@@ -42,7 +42,7 @@ RUN set -x \
   && conda config --append channels conda-forge \
   && conda config --append channels anaconda \
   && conda install --yes -c conda-forge rise \
-  && pip install --use-feature=2020-resolver Sphinx==3.3.1 Pillow parsel panel param holoviews datashader tensorflow-probability transformers[sentencepiece] pandas tensorflow_hub nltk wordcloud spacy emoji gensim umap-learn lightgbm biterm optuna plotly pyldavis \
+  && pip install --use-feature=2020-resolver Sphinx==3.3.1 Pillow parsel panel param holoviews datashader tensorflow-probability transformers[sentencepiece] pandas tensorflow_hub nltk wordcloud spacy emoji textblob vaderSentiment afinn gensim umap-learn lightgbm biterm optuna plotly pyldavis \
   && python -m spacy download en_core_web_sm \ 
   && pip install --use-feature=2020-resolver mlxtend \
   && conda clean --all -f -y \
