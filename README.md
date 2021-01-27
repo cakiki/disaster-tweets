@@ -89,39 +89,37 @@ This section is taken verbatim from the [kaggle competition page](https://www.ka
         - Shared evaluation pipeline: (1) read data -> (2) feed to model -> (3) generate score, plots + submission file
         - Idea: Once pipeline stands, everyone plays with models in step (2)
     * **Tasks:**
-        - [ ] Implement data assembly: ? (pending)
-        - [ ] Implement K-Fold Cross-Validation (k=?) as test splits: ? (pending)
-        - [ ] Generate result graphs and scores: ? (pending)
-        - [ ] Generate submission file: ? (pending)
+        - [x] Implement data assembly
+        - [x] Implement K-Fold Cross-Validation
+        - [x] Generate result graphs and scores
+        - [x] Generate submission file
     * **Deliverables:** Shared Evaluation Pipeline
-    * **Due:** ?
 3. MS: First Model Iteration:
     * **Description:**
         - Baseline model: Integrate simple model from tutorial (https://www.kaggle.com/philculliton/nlp-getting-started-tutorial)
         - Everyone plays with models in step (2)
     * **Tasks:**
-        - [ ] Implement model from tutorial: ? (pending)
-        - [ ] Implement own features & models: everyone (pending; fill in approach from each one)
+        - [x] Implement model from tutorial
+        - [x] Implement own features & models
     * **Deliverables:** Model dumps and their evaluation results
-    * **Due:** ?
 4. MS: Second Model Iteration:
     * **Description:**
         - Sync: Share insights & features from first iteration in group and with supervisor
         - Everyone attempts to improve their models from insights & features
     * **Tasks:**
         - [x] Sync Meeting (with supervisor?): everyone (pending)
-        - [ ] Improve own features & models: everyone (pending)
+        - [x] Improve own features & models: everyone (pending)
     * **Deliverables:** Model dumps and their evaluation results
-    * **Due:** ?
 5. MS: Final Presentation
     * **Tasks:**
-        - [ ] Intro slides: ? (pending)
-        - [ ] Leaderboard stats slide: ? (pending)
-        - [ ] Our result slides: everyone (pending)
+        - [x] Intro slides
+        - [x] Leaderboard stats slide
+        - [x] Our result slides
     * **Deliverables:** Presentation Slides
     * **Due:** ? (end of january)
 6. MS: Final Report
     * **Tasks:**
+        - [ ] LaTeX template ? (pending)
         - [ ] Abstract: ? (pending)
         - [ ] Intro: ? (pending)
         - [ ] Related Work: ? (pending)
